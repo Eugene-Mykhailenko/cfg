@@ -1,0 +1,116 @@
+
+.team {
+  position: relative;
+  background-color: $lighten-color;
+
+  .team-section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-content-title {
+    margin-bottom: 60px;
+    color: $lighten-color;
+
+    @media screen and (max-width: $desctopWidth) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .section-content-text {
+    color: $lighten-color;
+  }
+
+  &-item {
+    position: relative;
+    padding: 100px 0;
+
+    &:nth-child(1) {
+      .team-item__img {
+        @extend %pull-left-1;
+        @extend %pull-right-4;
+      }
+
+      .team-item__content {
+        left: calc(((100%/12) * 7) + 15px);
+      }
+
+      .team-item__letter {
+        width: 320px;
+
+        @media screen and (max-width: $desctopWidth) {
+          width: 256px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .team-item__img {
+        @extend %pull-left-4;
+        @extend %pull-right-1;
+      }
+
+      .team-item__content {
+        left: calc(((100%/12) * 2) + 15px);
+      }
+
+      .team-item__letter {
+        width: 278px;
+
+        @media screen and (max-width: $desctopWidth) {
+          width: 222px;
+        }
+      }
+    }
+
+    &__img {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 100px;
+      padding: 20px 0;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 5px;
+
+      @media screen and (max-width: $desctopWidth) {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__letter {
+      padding-top: 100px;
+
+      @media screen and (max-width: $desctopWidth) {
+        padding-top: 90px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+
+      }
+    }
+  }
+}

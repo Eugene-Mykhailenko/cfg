@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="18.4053595%" y1="87.9663365%" x2="101.682159%" y2="4.9525452%" id="linearGradient-1">
+            <stop stop-color="#EDAC8B" stop-opacity="0.754217618" offset="0%"></stop>
+            <stop stop-color="#EDAC8B" stop-opacity="0.297384511" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Desktop" fill="url(#linearGradient-1)">
+            <polygon id="Fill-1" points="1800.53641 0 387.515663 779.930086 0 993.823 0 1079.273 1430.58259 1079.273 1919.558 323.24 1919.558 0"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,119 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 0;
+  width: 100%;
+
+  &.black {
+    .main-logo .black {
+      opacity: 1;
+    }
+
+    .main-menu__item,
+    .languages__item {
+      color: $darken-color;
+    }
+  }
+
+  .nav-wrap {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100vh;
+    height: 110px;
+    padding: 80px 100px 0 80px;
+    z-index: 90;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+
+    @media screen and (max-width: $desctopWidth) {
+      padding: 60px 100px 0 60px;
+    }
+
+  }
+
+  .control-wrap {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    z-index: 100;
+
+    @media screen and (max-width: $desctopWidth) {
+      top: 60px;
+      right: 60px;
+    }
+  }
+
+  .main-logo {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+
+    @media screen and (max-width: $desctopWidth) {
+      left: 60px;
+    }
+
+    img {
+      width: 207px;
+      height: 105px;
+
+      @media screen and (max-width: $desctopWidth) {
+        width: 165px;
+        height: 85px;
+      }
+
+      &.black {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+    }
+  }
+
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    &__item {
+      @extend %menu-item;
+    }
+  }
+
+  .languages {
+    display: flex;
+    &__item {
+      @extend %language-item;
+      margin: 0 8px;
+
+      @media screen and (max-width: $desctopWidth) {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &__burger {
+    padding: 3px 0 0;
+    border: none;
+    background-color: transparent;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+
+    display: none;
+
+    img {
+      display: block;
+    }
+
+    &:hover,
+    &.active {
+      opacity: 0.5;
+    }
+  }
+}

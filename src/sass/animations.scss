@@ -1,0 +1,9 @@
+.anim-digit {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+.anim-digit.visible {
+  opacity: 1;
+  transform: none;
+}

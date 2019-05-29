@@ -1,0 +1,16 @@
+a(class='main-logo', href='/')
+    img(class='main-logo__img', src=require('../../img/cfg/main-logo.svg'))
+    img(class='main-logo__img black', src=require('../../img/cfg/main-logo-black.svg'))
+div.nav-wrap
+    nav(class='main-menu')
+        a(class='main-menu__item main-menu__item_about', href='/#about', data-i18n='common:menu:about') #{__('common:menu:about')}
+        a(class='main-menu__item main-menu__item_clients', href='/#clients', data-i18n='common:menu:clients') #{__('common:menu:clients')}
+        a(class='main-menu__item main-menu__item_team', href='/#team', data-i18n='common:menu:team') #{__('common:menu:team')}
+        a(class='main-menu__item main-menu__item_values', href='/#values', data-i18n='common:menu:values') #{__('common:menu:values')}
+        a(class='main-menu__item main-menu__item_contacts', href='/#contacts', data-i18n='common:menu:contacts') #{__('common:menu:contacts')}
+div.control-wrap
+    div(class='languages')
+        a(class='languages__item active', href='/#', data-i18n='common:langSwitch:ua') #{__('common:langSwitch:ua')}
+        a(class='languages__item', href='/#', data-i18n='common:langSwitch:en') #{__('common:langSwitch:en')}
+    button(class='main-header__burger')
+        img(src=require('../../img/burger-icon.svg'))

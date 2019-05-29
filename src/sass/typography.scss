@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'TT Bells';
+  src: url('../fonts/subset-TTBells-Regular.eot');
+  src: url('../fonts/subset-TTBells-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-TTBells-Regular.woff2') format('woff2'),
+  url('../fonts/subset-TTBells-Regular.woff') format('woff'),
+  url('../fonts/subset-TTBells-Regular.ttf') format('truetype'),
+  url('../fonts/subset-TTBells-Regular.svg#TTBells-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Bells';
+  src: url('../fonts/subset-TTBells-Light.eot');
+  src: url('../fonts/subset-TTBells-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-TTBells-Light.woff2') format('woff2'),
+  url('../fonts/subset-TTBells-Light.woff') format('woff'),
+  url('../fonts/subset-TTBells-Light.ttf') format('truetype'),
+  url('../fonts/subset-TTBells-Light.svg#TTBells-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Bells';
+  src: url('../fonts/subset-TTBells-LightItalic.eot');
+  src: url('../fonts/subset-TTBells-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-TTBells-LightItalic.woff2') format('woff2'),
+  url('../fonts/subset-TTBells-LightItalic.woff') format('woff'),
+  url('../fonts/subset-TTBells-LightItalic.ttf') format('truetype'),
+  url('../fonts/subset-TTBells-LightItalic.svg#TTBells-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: url('../fonts/subset-Formular.eot');
+  src: url('../fonts/subset-Formular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-Formular.woff2') format('woff2'),
+  url('../fonts/subset-Formular.woff') format('woff'),
+  url('../fonts/subset-Formular.ttf') format('truetype'),
+  url('../fonts/subset-Formular.svg#Formular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Formular';
+  src: url('../fonts/subset-Formular-Light.eot');
+  src: url('../fonts/subset-Formular-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-Formular-Light.woff2') format('woff2'),
+  url('../fonts/subset-Formular-Light.woff') format('woff'),
+  url('../fonts/subset-Formular-Light.ttf') format('truetype'),
+  url('../fonts/subset-Formular-Light.svg#Formular-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$formular-font: 'Formular', sans-serif;
+$ttbells-font: 'TT Bells', sans-serif;
+
+html {
+  font-family: $formular-font;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: $darken-color;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+h1 {
+  font-size: 140px;
+  line-height: 140px;
+  margin: 10px 0;
+  font-family: $ttbells-font;
+
+  @media screen and (max-width: $desctopWidth) {
+    font-size: 112px;
+    line-height: 112px;
+  }
+
+  @media screen and (max-width: $tabletWidth) {
+    font-size: 108px;
+    line-height: 108px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+h2 {
+  font-size: 72px;
+  line-height: 68px;
+  margin: 0;
+  font-family: $ttbells-font;
+
+  @media screen and (max-width: $desctopWidth) {
+    font-size: 53px;
+    line-height: 63px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+h3 {
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+  font-family: $ttbells-font;
+
+  @media screen and (max-width: $desctopWidth) {
+    font-size: 44px;
+    line-height: 57px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+p {
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+  font-size: 21px;
+  line-height: 32px;
+
+  @media screen and (max-width: $desctopWidth) {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  a {
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

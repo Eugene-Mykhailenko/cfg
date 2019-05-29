@@ -1,0 +1,27 @@
+.about {
+  position: relative;
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: calc(((100%/12) + 15px));
+    z-index: -1;
+    height: 100%;
+    width: auto;
+  }
+
+  .section-content-title {
+    margin-top: 27px;
+    margin-bottom: 78px;
+
+    @media screen and (max-width: $desctopWidth) {
+      margin-top: 31px;
+      margin-bottom: 73px;
+    }
+  }
+
+  .section-content-text {
+    margin-bottom: 50px;
+  }
+
+}

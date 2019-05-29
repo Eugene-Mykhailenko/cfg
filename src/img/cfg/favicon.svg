@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="69px" viewBox="0 0 68 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.06 0.753 67.845 0.753 67.845 68.169 0.06 68.169"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Главный-экран+про-нас" transform="translate(-80.000000, -28.000000)">
+            <g id="CFG_2_3-15-Copy" transform="translate(80.000000, 28.000000)">
+                <g id="Group-3">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <polyline id="Fill-1" fill="#CA8662" mask="url(#mask-2)" points="0 37.674 66.906 0.753 67.845 2.433 25.32 68.169 23.354 68.169 23.134 47 0.824 39.08 0 37.674"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

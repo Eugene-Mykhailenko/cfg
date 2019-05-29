@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="278px" height="353px" viewBox="0 0 278 353" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 277.2209 0 277.2209 352.8257 0 352.8257"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Клиенты" transform="translate(-1184.000000, -3573.000000)">
+            <g id="Page-1" transform="translate(1184.000000, 3573.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M154.6699,313.2947 C194.6969,313.2947 232.2529,298.9637 232.2529,250.0427 C232.2529,204.5797 196.6739,188.7677 155.1639,188.7677 L44.4739,188.7677 L44.4739,313.2947 L154.6699,313.2947 Z M44.4739,149.7287 L152.6929,149.7287 C191.7329,149.7287 221.3809,136.8807 221.3809,93.3947 C221.3809,53.3677 187.2849,39.5307 151.7049,39.5307 L44.4739,39.5307 L44.4739,149.7287 Z M227.8049,171.9657 C257.4549,185.8017 277.2209,217.4277 277.2209,253.5017 C277.2209,309.8347 238.1829,352.8257 157.6349,352.8257 L-0.0001,352.8257 L-0.0001,-0.0003 L153.6819,-0.0003 C228.2989,-0.0003 266.3499,41.0137 266.3499,89.4407 C266.3499,121.0667 253.5019,147.2577 227.8049,161.0937 L227.8049,171.9657 Z" id="Fill-1" fill="#F3F2F2" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
