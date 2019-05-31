@@ -1,13 +1,32 @@
 
 .values {
   position: relative;
-  background-color: $lighten-color;
+  overflow: hidden;
+  background-color: $darkGray;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
 
   .section-content-title {
     margin-bottom: 50px;
     font-size: 180px;
     line-height: 170px;
-    font-weight: 300;
+    font-weight: 400;
     color: $darken-color;
 
     @media screen and (max-width: $desctopWidth) {

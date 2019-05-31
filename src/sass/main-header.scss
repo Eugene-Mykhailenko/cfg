@@ -5,17 +5,7 @@
   z-index: 3;
   height: 0;
   width: 100%;
-
-  &.black {
-    .main-logo .black {
-      opacity: 1;
-    }
-
-    .main-menu__item,
-    .languages__item {
-      color: $darken-color;
-    }
-  }
+  transition-delay: 1.8s;
 
   .nav-wrap {
     position: absolute;
@@ -71,6 +61,11 @@
         left: 0;
         top: 0;
         opacity: 0;
+        transition: opacity 0.3s;
+
+        &.hidden {
+          opacity: 0 !important;
+        }
       }
     }
   }

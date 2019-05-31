@@ -8,7 +8,7 @@ block main-header
 
 block main-container
     section.top-section
-        header#top-section-header.main-header
+        header#top-section-header.main-header.anim-digit
             include ../includes/header
         div.video-overlay
         div.video-background
@@ -16,29 +16,27 @@ block main-container
                 iframe(src="https://www.youtube.com/embed/3CBA5Q3bzsQ?&loop=1&playlist=3CBA5Q3bzsQ&showinfo=0&controls=0&disablekb=1&autohide=1&rel=0&autoplay=1&mute=1", frameborder="0", allowfullscreen)
         div#top-section.section-wrap
             div.container
-                h1.section-content-title.top-section__title.anim-digit
-                    div(data-i18n='common:top-section:title:1') #{__('common:top-section:title:1')}
-                    div(data-i18n='common:top-section:title:2') #{__('common:top-section:title:2')}
-                    div(data-i18n='common:top-section:title:3') #{__('common:top-section:title:3')}
+                h1.section-content-title.top-section__title
+                    div(class="anim-digit", data-i18n='common:top-section:title:1') #{__('common:top-section:title:1')}
+                    div(class="anim-digit", data-i18n='common:top-section:title:2') #{__('common:top-section:title:2')}
+                    div(class="anim-digit", data-i18n='common:top-section:title:3') #{__('common:top-section:title:3')}
                 div.section-content-text
                     p(class='top-section__subtitle anim-digit', data-i18n='common:top-section:subtitle') #{__('common:top-section:subtitle')}
     section#about.about
         div.video-overlay
         div.section-wrap
-            h2.section-title.anim-digit
+            h2.section-title
                 span(class='section-title__text', data-i18n='common:about:title') #{__('common:about:title')}
             div.container
-                img(class='about-img', src=require('../../img/cfg/about-img.svg'))
-                h3(class='section-content-title anim-digit', data-i18n='common:about:content:title') #{__('common:about:content:title')}
-                div.section-content-text.anim-digit
+                img(class='about-img', src=require('../../img/about-img.svg'))
+                h3(class='section-content-title', data-i18n='common:about:content:title') #{__('common:about:content:title')}
+                div.section-content-text
                     p(data-i18n='common:about:content:text_1') #{__('common:about:content:text_1')}
                     p(data-i18n='common:about:content:text_2') #{__('common:about:content:text_2')}
     section#clients.clients
-        //header#clients-header.main-header
-        //    include ../includes/header
-        div(id='clients-section-bg', class='clients-section-bg', style=`background-image:url(${require("../../img/cfg/client-bg.jpg")})`)
+        div(id='clients-section-bg', class='clients-section-bg', style=`background-image:url(${require("../../img/client-bg.jpg")})`)
         div.section-wrap
-            h2.section-title.white.anim-digit
+            h2.section-title.white
                 span(class='section-title__text', data-i18n='common:clients:title') #{__('common:clients:title')}
             div.container
                 h3(class='section-content-title', data-i18n='common:clients:content:title') #{__('common:clients:content:title')}
@@ -47,7 +45,7 @@ block main-container
                 div.client-item
                     div.client-item__number 01
                     div.client-item__letter.client-item__letter_1
-                        img(src=require('../../img/cfg/client-l-1.svg'))
+                        img(src=require('../../img/client-l-1.svg'))
                     h2(class='client-item__title', data-i18n='common:clients:more_content:item_1:title') #{__('common:clients:more_content:item_1:title')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_1:text:1') #{__('common:clients:more_content:item_1:text:1')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_1:text:2') #{__('common:clients:more_content:item_1:text:2')}
@@ -55,7 +53,7 @@ block main-container
                 div.client-item
                     div.client-item__number 02
                     div.client-item__letter.client-item__letter_2
-                        img(src=require('../../img/cfg/client-l-2.svg'))
+                        img(src=require('../../img/client-l-2.svg'))
                     h2(class='client-item__title', data-i18n='common:clients:more_content:item_2:title') #{__('common:clients:more_content:item_2:title')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_2:text:1') #{__('common:clients:more_content:item_2:text:1')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_2:text:2') #{__('common:clients:more_content:item_2:text:2')}
@@ -63,76 +61,72 @@ block main-container
                 div.client-item
                     div.client-item__number 03
                     div.client-item__letter.client-item__letter_3
-                        img(src=require('../../img/cfg/client-l-3.svg'))
+                        img(src=require('../../img/client-l-3.svg'))
                     h2(class='client-item__title', data-i18n='common:clients:more_content:item_3:title') #{__('common:clients:more_content:item_3:title')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_3:text:1') #{__('common:clients:more_content:item_3:text:1')}
                 div.client-item
                     div.client-item__number 04
                     div.client-item__letter.client-item__letter_4
-                        img(src=require('../../img/cfg/client-l-4.svg'))
+                        img(src=require('../../img/client-l-4.svg'))
                     h2(class='client-item__title', data-i18n='common:clients:more_content:item_4:title') #{__('common:clients:more_content:item_4:title')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_4:text:1') #{__('common:clients:more_content:item_4:text:1')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_4:text:2') #{__('common:clients:more_content:item_4:text:2')}
                     p(class='client-item__text', data-i18n='common:clients:more_content:item_4:text:3') #{__('common:clients:more_content:item_4:text:3')}
     section#team.team
-        //header#team-header.main-header
-        //    include ../includes/header
-        div(id='team-section-bg', class='team-section-bg', style=`background-image:url(${require("../../img/cfg/client-bg.jpg")})`)
+        div(id='team-section-bg', class='team-section-bg', style=`background-image:url(${require("../../img/team-bg.jpg")})`)
         div.section-wrap
-            h2.section-title.white.anim-digit
+            h2.section-title.white
                 span(class='section-title__text', data-i18n='common:team:title') #{__('common:team:title')}
             div.container
-                h3(class='section-content-title anim-digit', data-i18n='common:team:content:title') #{__('common:team:content:title')}
-                div.section-content-text.anim-digit
+                h3(class='section-content-title', data-i18n='common:team:content:title') #{__('common:team:content:title')}
+                div.section-content-text
                     p(data-i18n='common:team:content:text:1') #{__('common:team:content:text:1')}
                     p(data-i18n='common:team:content:text:2') #{__('common:team:content:text:2')}
         div.container.section-more
             div.team-item
                 div.team-item__img
-                    img(src=require('../../img/cfg/team-1.jpg'))
+                    img(src=require('../../img/team-1.jpg'))
                 div.team-item__content
                     h3(class='team-item__title', data-i18n='common:team:more_content:item_1:title') #{__('common:team:more_content:item_1:title')}
                     h2.team-item__name
                         div(data-i18n='common:team:more_content:item_1:name:1') #{__('common:team:more_content:item_1:name:1')}
                         div(data-i18n='common:team:more_content:item_1:name:2') #{__('common:team:more_content:item_1:name:2')}
-                    div.team-item__letter
-                        img(src=require('../../img/cfg/team-a.svg'))
+                    div.team-item__letter.team-item__letter_1
+                        img(src=require('../../img/team-a.svg'))
             div.team-item
                 div.team-item__img
-                    img(src=require('../../img/cfg/team-2.jpg'))
+                    img(src=require('../../img/team-2.jpg'))
                 div.team-item__content
                     h3(class='team-item__title', data-i18n='common:team:more_content:item_2:title') #{__('common:team:more_content:item_2:title')}
                     h2.team-item__name
                         div(data-i18n='common:team:more_content:item_2:name:1') #{__('common:team:more_content:item_2:name:1')}
                         div(data-i18n='common:team:more_content:item_2:name:2') #{__('common:team:more_content:item_2:name:2')}
-                    div.team-item__letter
-                        img(src=require('../../img/cfg/team-b.svg'))
+                    div.team-item__letter.team-item__letter_2
+                        img(src=require('../../img/team-b.svg'))
     section#values.values
-        //header#values-header.main-header.black
-        //    include ../includes/header
         div.section-wrap
-            h2.section-title.anim-digit
+            h2.section-title
                 span(class='section-title__text', data-i18n='common:values:title') #{__('common:values:title')}
             div.container
-                h1.section-content-title.anim-digit
+                h1.section-content-title
                     div(data-i18n='common:values:content:title:1') #{__('common:values:content:title:1')}
                     div(data-i18n='common:values:content:title:2') #{__('common:values:content:title:2')}
 
             div.container
                 div.values-item
                     div.values-item__img
-                        img(src=require('../../img/cfg/values-1.jpg'))
-                        div.values-item__number
-                            img(src=require('../../img/cfg/values-n-1.svg'))
+                        img(src=require('../../img/values-1.jpg'))
+                        div.values-item__number.values-item__number_1
+                            img(src=require('../../img/values-n-1.svg'))
                     div.values-item__content
                         h2(class='values-item__title', data-i18n='common:values:content:item_1:title') #{__('common:values:content:item_1:title')}
                         p(class='values-item__text', data-i18n='common:values:content:item_1:text:1') #{__('common:values:content:item_1:text:1')}
 
                 div.values-item
                     div.values-item__img
-                        img(src=require('../../img/cfg/values-2.jpg'))
-                        div.values-item__number
-                            img(src=require('../../img/cfg/values-n-2.svg'))
+                        img(src=require('../../img/values-2.jpg'))
+                        div.values-item__number.values-item__number_2
+                            img(src=require('../../img/values-n-2.svg'))
                     div.values-item__content
                         h2(class='values-item__title', data-i18n='common:values:content:item_2:title') #{__('common:values:content:item_2:title')}
                         p(class='values-item__text', data-i18n='common:values:content:item_2:text:1') #{__('common:values:content:item_2:text:1')}
@@ -140,30 +134,30 @@ block main-container
 
                 div.values-item
                     div.values-item__img
-                        img(src=require('../../img/cfg/values-3.jpg'))
-                        div.values-item__number
-                            img(src=require('../../img/cfg/values-n-3.svg'))
+                        img(src=require('../../img/values-3.jpg'))
+                        div.values-item__number.values-item__number_3
+                            img(src=require('../../img/values-n-3.svg'))
                     div.values-item__content
                         h2(class='values-item__title', data-i18n='common:values:content:item_3:title') #{__('common:values:content:item_3:title')}
                         p(class='values-item__text', data-i18n='common:values:content:item_3:text:1') #{__('common:values:content:item_3:text:1')}
 
     section#contacts.contacts
         div.section-wrap
-            h2.section-title.anim-digit
+            h2.section-title
                 span(class='section-title__text', data-i18n='common:contacts:title') #{__('common:contacts:title')}
             div.container
-                a(class="contacts-address anim-digit", href="https://goo.gl/maps/Q9BdYbXtLEA2", target="_blank")
+                a(class="contacts-address", href="https://goo.gl/maps/Q9BdYbXtLEA2", target="_blank")
                     span(data-i18n='common:contacts:address:1', title="#{__('common:contacts:addres:1')}")
                     span(data-i18n='common:contacts:address:2', title="#{__('common:contacts:addres:2')}")
                     span(data-i18n='common:contacts:address:3', title="#{__('common:contacts:addres:3')}")
                     div(class="contacts-address__img")
-                        img(src=require('../../img/cfg/client-l-1.svg'))
+                        img(src=require('../../img/client-l-1.svg'))
 
-                div.contacts-item.anim-digit
+                div.contacts-item
                     h4(class="contacts-item__title", data-i18n='common:contacts:tell', title="#{__('common:contacts:tell')}")
                     a(class="contacts-item__text", href="tel:+380672446554") +380 67 244 65 54
                     a(class="contacts-item__text", href="tel:+380683818280") +380 68 381 82 80
-                div.contacts-item.anim-digit
+                div.contacts-item
                     h4(class="contacts-item__title", data-i18n='common:contacts:email', title="#{__('common:contacts:email')}")
                     a(class="contacts-item__text", href="mailto:info@cfg.ua?subject=Hello") info@cfg.ua
                 div(class='contacts__copy') © #{new Date().getYear() + 1900} #{__('common:contacts:copy')}

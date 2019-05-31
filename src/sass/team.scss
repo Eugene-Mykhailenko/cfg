@@ -88,12 +88,17 @@
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 5px;
+      font-family: $formular-font;
 
       @media screen and (max-width: $desctopWidth) {
         font-size: 12px;
         line-height: 15px;
         margin-bottom: 10px;
       }
+    }
+
+    &__name {
+      font-family: $formular-font;
     }
 
     &__letter {

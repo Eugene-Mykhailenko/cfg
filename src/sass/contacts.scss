@@ -2,6 +2,15 @@
 .contacts {
   background-color: $lighten-color;
 
+  .section-wrap {
+    align-items: initial;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &-address {
     position: relative;
     display: block;
@@ -85,12 +94,12 @@
     @extend %pull-right-1;
     font-size: 18px;
     line-height: 22px;
-    margin-top: 110px;
+    margin-top: auto;
+    margin-bottom: 0;
 
     @media screen and (max-width: $desctopWidth) {
       font-size: 12px;
       line-height: 15px;
-      margin-top: 80px;
     }
   }
 
@@ -110,6 +119,11 @@
       font-size: 18px;
       line-height: 22px;
       color: $darken-color;
+
+      @media screen and (max-width: $desctopWidth) {
+        font-size: 12px;
+        line-height: 15px;
+      }
 
       a {
         position: relative;

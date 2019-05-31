@@ -79,6 +79,7 @@ h1 {
   font-size: 140px;
   line-height: 140px;
   margin: 10px 0;
+  font-weight: 400;
   font-family: $ttbells-font;
 
   @media screen and (max-width: $desctopWidth) {
@@ -99,8 +100,9 @@ h1 {
 
 h2 {
   font-size: 72px;
-  line-height: 68px;
+  line-height: 86px;
   margin: 0;
+  font-weight: 400;
   font-family: $ttbells-font;
 
   @media screen and (max-width: $desctopWidth) {
@@ -118,6 +120,7 @@ h3 {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  font-weight: 400;
   font-family: $ttbells-font;
 
   @media screen and (max-width: $desctopWidth) {
