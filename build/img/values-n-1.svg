@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="484px" height="360px" viewBox="0 0 484 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.749 254.4899 0.749 254.4899 359.9996 0 359.9996"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ценности" transform="translate(-606.000000, -909.000000)">
+            <g id="Page-1" transform="translate(606.000000, 908.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.251000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M211.0049,180.6216 C211.0049,94.6386 184.8149,39.2926 126.9979,39.2926 C69.6759,39.2926 43.4849,94.6386 43.4849,180.6216 C43.4849,266.1106 69.6759,321.4556 126.9979,321.4556 C184.8149,321.4556 211.0049,266.1106 211.0049,180.6216 M254.4899,180.6216 C254.4899,305.1486 200.1329,359.9996 126.9979,359.9996 C53.8629,359.9996 -0.0001,305.1486 -0.0001,180.6216 C-0.0001,56.0946 53.8629,0.7486 126.9979,0.7486 C200.1329,0.7486 254.4899,56.0946 254.4899,180.6216" id="Fill-1" fill="#F3F2F2" mask="url(#mask-2)"></path>
+                </g>
+                <polygon id="Fill-4" fill="#F3F2F2" points="282.8545 315.2832 364.8835 315.2832 364.8835 53.3802 355.0005 53.3802 282.3605 102.3022 282.3605 56.8392 354.5065 7.9182 408.3705 7.9182 408.3705 315.2832 483.9755 315.2832 483.9755 353.8272 282.8545 353.8272"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
