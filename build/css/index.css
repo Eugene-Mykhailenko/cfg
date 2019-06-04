@@ -1136,10 +1136,10 @@ img {
       .team .section-content-title {
         margin-bottom: 40px; } }
   .team .section-more {
-    background-color: #fff; }
+    padding-top: 30%; }
     @media screen and (max-width: 767px) {
       .team .section-more {
-        padding: 0 0 130px; } }
+        padding: 130px 0 130px; } }
   .team .section-content-text {
     color: #fff; }
   .team-item {
