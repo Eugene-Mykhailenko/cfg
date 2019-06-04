@@ -258,14 +258,14 @@ export const setupScrollMagic = () => {
 // values
   // values number parralax
     new ScrollMagic.Scene({triggerElement: ".values-item__number_1 img",duration: "100%", ease: Ease.Ease})
-        .setTween(".values-item__number_1 img", {y: "25%", ease: Linear.easeNone})
+        .setTween(".values-item__number_1 img", {y: "-25%", ease: Linear.easeNone})
         .addTo(controller);
 
     new ScrollMagic.Scene({triggerElement: ".values-item__number_2 img",duration: "100%", ease: Ease.Ease})
-        .setTween(".values-item__number_2 img", {y: "25%", ease: Linear.easeNone})
+        .setTween(".values-item__number_2 img", {y: "-25%", ease: Linear.easeNone})
         .addTo(controller);
 
     new ScrollMagic.Scene({triggerElement: ".values-item__number_3 img",duration: "100%", ease: Ease.Ease})
-        .setTween(".values-item__number_3 img", {y: "25%", ease: Linear.easeNone})
+        .setTween(".values-item__number_3 img", {y: "-25%", ease: Linear.easeNone})
         .addTo(controller);
 };
