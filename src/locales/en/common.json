@@ -1,11 +1,11 @@
 {
   "title": "cfg",
   "menu": {
-    "about": "ABOUT",
-    "clients": "ПОСЛУГИ",
-    "team": "КОМАНДА",
-    "values": "ЦІННОСТІ",
-    "contacts": "КОНТАКТИ"
+    "about": "ABOUT US",
+    "clients": "SERVICES",
+    "team": "TEAM",
+    "values": "OUR VALUES",
+    "contacts": "CONTACTS"
   },
   "langSwitch": {
     "ua": "ua",
@@ -13,101 +13,120 @@
   },
   "top-section": {
     "title": {
-      "1": "corporate",
-      "2": "finance",
-      "3": "governance"
+      "1": "business",
+      "2": "growth",
+      "3": "solutions"
     },
-    "subtitle": "Cfg заснована в 2013 році. Клієнти приходять до нас\nіз задачами. Наша робота — знайти правильні\nінструменти для їх вирішення. "
+    "subtitle": "CFG was founded in 2013. Customers come to us with their challenges. Our job is to find the right tools to solve them."
   },
   "about": {
-    "title": "ПРО НАС",
+    "title": "ABOUT US",
     "content": {
-      "title": "Ми надаємо консалтингові та юридичні послуги. Наша спеціалізація — ринок цінних паперів, корпоративне управління та корпоративні фінанси.",
-      "text_1": "В якості інструментів ми використовуємо M&A, емісію цінних паперів, спільне інвестування, корпоративне управління в АТ, дивідендну та податкову політику та інші. ",
-      "text_2": "В комплексних проектах ми виконуємо роль архітектора та залучаємо інших підрядників (судова практика, реєстраційні процеси тощо). Іноді ми працюємо як першопрохідці — добиваємось, щоб державний орган прийняв індивідуальне нормативне рішення на користь клієнта. Це повністю легітимний процес. Ми працюємо в робочих групах, які допомагають державним органам розвивати нормативно-правову базу."
+      "title": "We provide consulting and legal services and specialize in securities market, corporate governance and corporate finance.",
+      "text_1": "In terms of instruments, we use M&A, equity issuance, joint ventures, corporate governance in JSCs, dividend and tax policies, and others.",
+      "text_2": "In complex projects we act as an architect and involve other contractors (jurisprudence, registration processes, etc.). Sometimes we work as pioneers, striving for government agency to adopt an individual regulatory decision in favor of our client. This is a completely legitimate process. Our working groups help government agencies in developing the regulatory framework."
     }
   },
   "clients": {
-    "title": "ПОСЛУГИ",
+    "title": "SERVICES",
     "content": {
-      "title": "Клієнти приходять до нас із задачами. Наша робота — знайти правильні інструменти для їх вирішення."
+      "title": "Customers come to us with their challenges. Our job is to find the right tools to solve them."
     },
     "more_content": {
       "item_1": {
-        "title": "Корпоративне управління та фінанси",
+        "title": "Corporate Governance and Finance",
         "text": {
-          "1" : "Обслуговувати корпоративні відносини — основна наша робота. Ми реалізовуємо задачі наших клієнтів — будуємо фінансові моделі, змінюємо фінансові потоки та показники, організовуємо фондування. Для цього створюємо АТ, реструктуризуємо та реорганізовуємо бізнес, проводимо емісії цінних паперів. ",
-          "2" : "Щоб упорядкувати відносини між акціонерами, АТ та інвесторами, ми структуруємо бізнес групи та розробляємо ефективні структури корпоративного управління. ",
-          "3" : "А якщо клієнту потрібно забезпечити оптимальну структуру капіталу, ми врегулюємо корпоративні конфлікти, проведемо сквіз-аут або супроводимо M&A."
+          "1" : "Our main work is to maintain corporate relationships. We implement our clients tasks - build financial models, change financial flows and indicators, organize funding. For this we create JSCs, restructure and reorganize the business, issue securities.",
+          "2" : "To organize the relations between the shareholders, JSCs and investors, we structure the business groups and develop effective corporate governance structures.",
+          "3" : "And if the client needs optimal structure of capital to be provided, we resolve corporate conflicts, run a squeeze-out or accompany M&A"
         }
       },
       "item_2": {
-        "title": "Спільне інвестування",
+        "title": "Joint Investments",
         "text": {
-          "1" : "Податкові пільги інститутів спільного інвестування роблять їх привабливими для наших клієнтів. Ми будуємо моделі, щоб вони правильно використовували такі фонди. Це цікаво для девелопменту, організації бізнес потоків, управління та податкового планування в групах компаній, купівлі/продажу активів, фондування і так далі. ",
-          "2" : "Також ми створюємо для клієнтів самі інвестиційні компанії, фонди, управляючі компанії та ліцензуємо їх діяльність. Допомагаємо придбати працюючі компанії чи знайти партнерів. ",
-          "3" : "Проте зазвичай ми не радимо купувати існуючі компанії або фонди. На наш погляд, доцільніше купити портфель разом із компанією. Часто клієнту просто бракує часу створити власну компанію (фонд). Тоді ми запропонуємо тимчасово обслуговувати його нашими партнерами. "
+          "1" : "Tax incentives for joint investment institutes make them attractive to our clients. We build models for them to properly use such funds. It is interesting for development, organization of business flows, management and tax planning in groups of companies, assets sales and purchases, financing, and so on.",
+          "2" : "For our clients we also create investment companies, funds, management companies and provide licensing for their activities. We help acquiring working companies or finding partners as well.",
+          "3" : "However, we usually do not recommend buying existing companies or funds. In our opinion, it is more expedient to buy a portfolio together with the company. Often clients simply lack the time to create their own companies (funds). In such cases we offer them to be temporarily served with our partners."
         }
       },
       "item_3": {
         "title": "Due diligence",
         "text": {
-          "1" : "В цій частині ми надаємо різні послуги — залежить від задачі. Наприклад, ми збираємо, аналізуємо інформацію та надаємо рекомендації з окремих питань. Або проводимо широкі дослідження. В останньому ми часто співпрацюємо з аудиторами, незалежними оцінювачами та іншими експертами."
+          "1" : "In this part we provide various services, depending on the task. For example, we collect, analyze information and provide advices on specific issues, or sometimes conduct extensive research. While researching, we often collaborate with auditors, independent appraisers and other experts."
         }
       },
       "item_4": {
-        "title": "Взаємовідносини з регуляторами",
+        "title": "Relationships with Regulators",
         "text": {
-          "1" : "Часто клієнтам потрібно побудувати відносини або налагодити комунікації з державними органами. У нас в цьому великий досвід — ми взаємодіємо з регуляторами в більшості проектів.",
-          "2" : "Ми можемо повністю представляти інтереси клієнта у відносинах з державним органом. Наприклад, супроводжувати перевірки, розгляд правопорушень і таке інше.",
-          "3" : "Іноді щоб вирішити задачу, ми робимо майже неможливе: добиваємось, щоб регулятор прийняв індивідуальне рішення — змінив нормативно-правові акти на користь клієнта."
+          "1" : "Often our customers need to build relationships or establish communication with government agencies. We have a lot of experience in this area, since we interact with regulators in most of our projects.",
+          "2" : "We can fully represent client's interests in relations with a government agency. For example, accompany audits, review offenses, and so on.",
+          "3" : "Sometimes to solve a problem we do what seems nearly impossible: we strive for the regulator to adopt an individual regulatory decision in favor of our client."
         }
       }
     }
   },
   "team": {
-    "title": "КОМАНДА",
+    "title": "TEAM",
     "content": {
-      "title": "Сfg об’єднала людей, які працюють у фінансовому секторі більше 20 років. У нас великий досвід державної служби, управління активами, банківської діяльності, юридичної практики, управління АТ та фінансового моделювання.",
-      "text": "Наші люди — перфекціоністи. Ми прагнемо бути кращими в тому, що робимо. Водночас нас об’єднує те, що ми прості і не женемося за ознаками успіху.\n\nУ нас стабільний колектив. Компанія лише доповнюється новими людьми, які привносять свіжі ідеї та погляди. Повернувшись до нас із новою задачею через два роки, працюєш з тими ж людьми."
+      "title": "CFG has brought together people who have been working in the financial sector for over 20 years. We have extensive experience in public service, asset management, banking, legal practice, JSC management and financial modeling.",
+      "text": {
+        "1": "Our people are perfectionists. We strive to be the best in what we do. At the same time, we are united by the fact that we are simple and do not pursue signs of success.",
+        "2": "We have a stable team. The company is only complemented by new people who bring fresh ideas and insights. Returning to us with a new task in two years, you still work with the same people."
+      }
     },
     "more_content": {
       "item_1": {
-        "title": "ЗАСНОВНИК",
-        "name": "Андрій\nСтепаненко"
+        "title": "FOUNDER",
+        "name": {
+          "1": "Andrii",
+          "2": "Stepanenko"
+        }
       },
       "item_2": {
         "title": "CEO",
-        "name": "Володимир\nСтаровойтенко"
+        "name": {
+          "1": "Volodymir",
+          "2": "Starovoitenko"
+        }
       }
     }
   },
   "values": {
-    "title": "ЦІННОСТІ",
+    "title": "OUR VALUES",
     "content": {
-      "title": "Наші \nцінності",
+      "title": {
+        "1": "Our",
+        "2": "Values"
+      },
       "item_1": {
-        "title": "Клієнт",
-        "text": "Ми любимо своїх клієнтів. Їх проблеми та цілі стають нашими. Тож, ми будуємо з клієнтами партнерські відносини, а з багатьма дружимо роками і після закінчення проектів. Переважна більшість нових клієнтів CFG приходить по рекомендації тих, хто з нами вже працював. І це — найцінніше.\n"
+        "title": "Clients",
+        "text": {
+          "1" : "We love our clients. Their problems and goals become ours. Therefore, we build partnerships with customers, and with many we have been friends years after the end of projects. The overwhelming majority of new CFG clients come on the recommendation of those who have already worked with us. And this is what we value the most."
+        }
       },
       "item_2": {
-        "title": "Приватність",
-        "text": "Наші клієнти — великі та середні компанії України. Це фінансові та промислові групи, банки, страхові компанії. Також ми працюємо з публічними особами. \nВсі вони довіряють нам причини своїх дій та стратегічні цілі компаній. CFG дотримується принципу не розголошувати інформацію про своїх клієнтів та здійснені проекти, якщо клієнт не надав нам на це своєї згоди. \n\nІноді наші клієнти — прямі конкуренти один одному. Ми ніколи не використовуємо інформацію одних клієнтів в роботі з іншими.  Наприклад, у нас три клієнти в галузі споживчого кредитування. В такій ситуації, розголошення наявної інформації — це бізнес ризики для когось із них. Тому на сайті ви\nне побачите розділу “наші клієнти”. Ми впевнені, що ніякі гучні імена не замінять живого спілкування, коли ви обираєте собі партнерів для вирішення складних задач.  "
+        "title": "Privacy",
+        "text": {
+          "1" : "Our clients are large and medium-sized Ukrainian companies. These are financial and industrial groups, banks, insurance companies. We also work with public figures. All of them trust us with the reasons for their actions and strategic goals of the company. CFG adheres to the principle of not disclosing information about its clients and implemented projects, unless the client has given us his consent.",
+          "2" : "Sometimes our customers happen to be direct competitors to each other. We never use the information of some clients in working with others. For example, we have three customers in the area of \u200B\u200Bconsumer lending. In such a situation, the disclosure of available information may become a business risk for some of them. Therefore, you will not see \"Our customers\" section on the website. We are sure that no big names are able to replace live communication when you choose your partners for solving complex problems."
+        }
       },
       "item_3": {
-        "title": "Команда",
-        "text": "Для кожного з нас важливо поважати свою роботу. Тому ми відмовляємось від проектів, в яких нам доведеться йти наперекір власним морально- етичним міркуванням. Так, наприклад, ми не беремося за агресивне поглинання однієї компанії іншою. Таке рішення не залежить від ціни. \n"
+        "title": "Team",
+        "text": {
+          "1" : "It is important for each of us to respect our work. Therefore, we refuse projects in which we will have to go against our own moral and ethical considerations. For example, we do not undertake the aggressive takeover of one company by another. This solution does not depend on the price. "
+        }
       }
     }
   },
   "contacts": {
-    "title": "КОНТАКТИ",
+    "title": "CONTACTS",
     "address": {
-      "1": "ТОВ «СІ ЕФ ДЖІ»",
-      "2": "04053, Україна, м. Київ,",
-      "3": "вул. Кудрявський Узвіз 5б"
+      "1": "«СFG» LLC",
+      "2": "04053, Ukraine, Kyiv",
+      "3": "Kudriavskiy descent 56"
     },
-    "tell": "ТЕЛЕФОН",
+    "tell": "TELL",
     "email": "E-MAIL",
     "copy": "CFG ALL RIGHTS RESERVED",
     "madeby": {

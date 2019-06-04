@@ -24,10 +24,11 @@
   }
 
   .section-more {
-    background-color: $lightenColor;
+    //background-color: $lightenColor;
+    padding-top: 30%;
 
     @media screen and (max-width: $mobileWidth) {
-      padding: 0 0 130px;
+      padding: 130px 0 130px;
     }
   }
 
