@@ -1,17 +1,36 @@
 .main-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 101;
   height: 0;
   width: 100%;
   transition-delay: 1.8s;
+
+  @media screen and (max-width: $tabletWidth) {
+    position: fixed;
+    z-index: 101;
+  }
+
+  &.open-menu {
+    .main-logo {
+      .main-logo__img.black {
+        opacity: 0;
+      }
+    }
+
+    .languages {
+      &__item {
+        color: $lightenColor;
+      }
+    }
+  }
 
   .nav-wrap {
     position: absolute;
     top: 100vh;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     width: 100vh;
     height: 110px;
@@ -24,6 +43,10 @@
       padding: 60px 100px 0 60px;
     }
 
+    @media screen and (min-width: $tabletWidth) {
+      display: flex;
+    }
+
   }
 
   .control-wrap {
@@ -31,10 +54,22 @@
     top: 80px;
     right: 80px;
     z-index: 100;
+    display: flex;
+    align-items: flex-start;
 
     @media screen and (max-width: $desctopWidth) {
       top: 60px;
       right: 60px;
+    }
+
+    @media screen and (max-width: $tabletWidth) {
+      top: 40px;
+      right: 40px;
+    }
+
+    @media screen and (max-width: $mobileWidth) {
+      top: 20px;
+      right: 20px;
     }
   }
 
@@ -47,6 +82,11 @@
       left: 60px;
     }
 
+    @media screen and (max-width: $mobileWidth) {
+      top: 10px;
+      left: 20px;
+    }
+
     img {
       width: 207px;
       height: 105px;
@@ -56,15 +96,19 @@
         height: 85px;
       }
 
+      @media screen and (max-width: $mobileWidth) {
+        width: 62px;
+        height: 31px;
+      }
+
       &.black {
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 0;
-        transition: opacity 0.3s;
+        transition: opacity 0.3s ease;
 
         &.hidden {
-          opacity: 0 !important;
+          opacity: 0;
         }
       }
     }
@@ -78,37 +122,117 @@
 
     &__item {
       @extend %menu-item;
+
+      &.white {
+        color: $lightenColor;
+      }
     }
   }
 
   .languages {
     display: flex;
+    align-items: flex-start;
+
     &__item {
       @extend %language-item;
       margin: 0 8px;
 
-      @media screen and (max-width: $desctopWidth) {
-        margin: 0 5px;
+      @media screen and (max-width: $tabletWidth) {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 6px;
+      }
+
+      @media screen and (max-width: $mobileWidth) {
+        font-size: 11px;
+        line-height: 14px;
+        margin: 0 4px;
       }
     }
   }
 
-  &__burger {
-    padding: 3px 0 0;
+  &-burger {
+    position: relative;
+    padding: 0;
     border: none;
+    border-radius: 0;
     background-color: transparent;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
-
     display: none;
 
-    img {
+    @media screen and (max-width: $tabletWidth) {
       display: block;
+      width: 20px;
+      height: 20px;
+      margin-left: 14px;
     }
 
-    &:hover,
+    @media screen and (max-width: $mobileWidth) {
+      width: 15px;
+      height: 15px;
+      margin-left: 7px;
+    }
+
+    &__item {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $darkenColor;
+      transform-origin: center;
+      transition: all 0.3s ease;
+
+      &_1 {
+        top: 0;
+      }
+
+      &_2 {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &_3 {
+        bottom: 0;
+      }
+    }
+
+
+    &.white:not(.active) {
+      .main-header-burger__item {
+        background-color: $lightenColor;
+      }
+    }
+
     &.active {
-      opacity: 0.5;
+      .main-header-burger__item {
+        background-color: $lightenColor;
+
+        &_1 {
+          @media screen and (max-width: $tabletWidth) {
+            transform: translateY(9px) rotate(45deg);
+          }
+
+          @media screen and (max-width: $mobileWidth) {
+            transform: translateY(7px) rotate(45deg);
+          }
+        }
+
+        &_2 {
+          opacity: 0;
+        }
+
+        &_3 {
+          @media screen and (max-width: $tabletWidth) {
+            transform: translateY(-10px) rotate(-45deg);
+          }
+
+          @media screen and (max-width: $mobileWidth) {
+            transform: translateY(-7px) rotate(-45deg);
+          }
+        }
+      }
     }
   }
 }

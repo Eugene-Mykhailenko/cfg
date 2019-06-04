@@ -23,43 +23,46 @@ export const setupScrollMagic = () => {
             .addTo(controller);
     }
 
+    const screenWidth = $(window).width();
+    const mobileWidth = 767 >= screenWidth;
+    const tabletWidth = 1024 >= screenWidth;
+    const desctopWidth = 1024 < screenWidth;
+
 // top section
-    // menu fix
-    let topSectionHeight = $(document).height();
-    new ScrollMagic.Scene({
-        triggerElement: "#top-section-header",
-        triggerHook: 0,
-        duration: topSectionHeight,
-        offset: 0
-    })
-        .setPin("#top-section-header")
-        .addTo(controller);
 
-    //menu logo color
-    var menuLogo = new TimelineMax()
-        .from("#top-section-header .main-logo__img.black", 1, {opacity: 0})
-        .to("#top-section-header .main-logo__img.black", 1, {opacity: 1});
+    // menu logo color
     new ScrollMagic.Scene({
-        triggerElement: "#top-section-header",
+        triggerElement: ".top-section",
         triggerHook: 0,
         duration: "20%",
         offset: 0
-    })
-        .setTween(menuLogo)
-        .addTo(controller);
+    }).setClassToggle(".main-logo__img.black", "hidden").addTo(controller);
 
-    //menu item color
-    var menuItem = new TimelineMax()
-        .from([".main-menu__item", " .languages__item"], 1, {color: '#fff'})
-        .to([" .main-menu__item", ".languages__item"], 1, {color: '#20222B'});
+    // lang item color
     new ScrollMagic.Scene({
-        triggerElement: "#top-section-header",
+        triggerElement: ".top-section",
         triggerHook: 0,
         duration: "20%",
         offset: 0
-    })
-        .setTween(menuItem)
-        .addTo(controller);
+    }).setClassToggle(".languages__item", "white").addTo(controller);
+
+    // burger color
+    new ScrollMagic.Scene({
+        triggerElement: ".top-section",
+        triggerHook: 0,
+        duration: "20%",
+        offset: 0
+    }).setClassToggle(".main-header-burger", "white").addTo(controller);
+
+    if(desctopWidth) {
+        // menu item color
+        new ScrollMagic.Scene({
+            triggerElement: ".top-section",
+            triggerHook: 0,
+            duration: "20%",
+            offset: 0
+        }).setClassToggle(".main-menu__item", "white").addTo(controller);
+    }
 
     //video overlay
     var topSectionVideoOverlay = new TimelineMax()
@@ -70,21 +73,21 @@ export const setupScrollMagic = () => {
         triggerHook: 0,
         duration: "100%", // use full viewport
         offset: 0
-    })
-        .setTween(topSectionVideoOverlay)
-        .addTo(controller);
+    }).setTween(topSectionVideoOverlay).addTo(controller);
 
 //about image parralax
-    var aboutImageParralax = new TimelineMax()
-        .from([".about-img"], 1, {transform: 'translateY(0)'})
-        .to([".about-img"], 1, {transform: 'translateY(-5%)'});
-    new ScrollMagic.Scene({
-        triggerElement: "#about",
-        triggerHook: 0.5,
-        duration: "60%", // use full viewport
-        offset: 0
-    })
-        .setTween(aboutImageParralax)
+//     var aboutImageParralax = new TimelineMax()
+//         .from([".about-img"], 1, {transform: 'translateY(0)', ease: Ease.Ease})
+//         .to([".about-img"], 1, {transform: 'translateY(-5%)', ease: Ease.Ease});
+//     new ScrollMagic.Scene({
+//         triggerElement: "#about",
+//         triggerHook: 0.9,
+//         duration: "100%", // use full viewport
+//         offset: 0
+//     }).setTween(aboutImageParralax).addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#about",duration: "100%", ease: Ease.Ease})
+        .setTween(".about-img", {y: "10%", ease: Linear.easeNone})
         .addTo(controller);
 
 // clients
@@ -92,198 +95,161 @@ export const setupScrollMagic = () => {
     new ScrollMagic.Scene({
         triggerElement: "#clients",
         triggerHook: 0.1,
-        duration: "20%",
+        duration: "50%",
         offset: 0
-    })
-        .setClassToggle(".main-logo__img.black", "hidden")
-        .addTo(controller);
+    }).setClassToggle(".main-logo__img.black", "hidden").addTo(controller);
+
     // lang item color
     new ScrollMagic.Scene({
         triggerElement: "#clients",
         triggerHook: 0.1,
-        duration: "20%",
+        duration: "50%",
         offset: 0
-    })
-        .setClassToggle(".languages__item", "white")
-        .addTo(controller);
+    }).setClassToggle(".languages__item", "white").addTo(controller);
+
+    // burger color
+    new ScrollMagic.Scene({
+        triggerElement: "#clients",
+        triggerHook: 0.1,
+        duration: "50%",
+        offset: 0
+    }).setClassToggle(".main-header-burger", "white").addTo(controller);
+
     // menu item color
     new ScrollMagic.Scene({
         triggerElement: "#clients",
-        triggerHook: 0.9,
+        triggerHook: 0.5,
         duration: "100%",
         offset: 0
-    })
-        .setClassToggle(".main-menu__item", "white")
-        .addTo(controller);
+    }).setClassToggle(".main-menu__item", "white").addTo(controller);
 
     //client content fix
     var clientsSectionFix = new TimelineMax()
-        .from(["#clients-section-bg"], 1, {transform: 'scale(1.1)', opacity: 1, ease: Linear.easeNone})
-        .to(["#clients-section-bg"], 1, {transform: 'scale(1)', opacity: 0, ease: Linear.easeNone});
+        .from(["#clients-section-bg"], 1, {transform: 'scale(1.1)', ease: Ease.Ease})
+        .to(["#clients-section-bg"], 1, {transform: 'scale(1)', ease: Ease.Ease});
     new ScrollMagic.Scene({
         triggerElement: "#clients-section-bg",
         triggerHook: 0,
-        duration: "20%", // use full viewport
+        duration: "100%", // use full viewport
         offset: 0
-    })
-        .setTween(clientsSectionFix)
-        .setPin("#clients-section-bg")
-        .addTo(controller);
+    }).setTween(clientsSectionFix).setPin("#clients-section-bg").addTo(controller);
+
+    var clientsSectionFix2 = new TimelineMax()
+        .from(["#clients-section-bg", "#clients .section-content-title"], 1, { opacity: 1, ease: Ease.Ease})
+        .to(["#clients-section-bg", "#clients .section-content-title"], 1, { opacity: 0, ease: Ease.Ease});
+    new ScrollMagic.Scene({
+        triggerElement: "#clients-section-bg",
+        triggerHook: 0,
+        duration: "50%",
+        offset: 0
+    }).setTween(clientsSectionFix2).addTo(controller);
 
  //clients letter parralax
-    var letterElementsParralax1 = new TimelineMax()
-        .from('.client-item__letter_1', 1, {transform: 'translateY(0)'})
-        .to('.client-item__letter_1', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.client-item__letter_1',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(letterElementsParralax1)
+    new ScrollMagic.Scene({triggerElement: ".client-item__letter_1",duration: "100%", ease: Ease.Ease})
+        .setTween(".client-item__letter_1", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    var letterElementsParralax2 = new TimelineMax()
-        .from('.client-item__letter_2', 1, {transform: 'translateY(0)'})
-        .to('.client-item__letter_2', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.client-item__letter_2',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(letterElementsParralax2)
+    new ScrollMagic.Scene({triggerElement: ".client-item__letter_2",duration: "100%", ease: Ease.Ease})
+        .setTween(".client-item__letter_2", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    var letterElementsParralax3 = new TimelineMax()
-        .from('.client-item__letter_3', 1, {transform: 'translateY(0)'})
-        .to('.client-item__letter_3', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.client-item__letter_3',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(letterElementsParralax3)
+    new ScrollMagic.Scene({triggerElement: ".client-item__letter_3",duration: "100%", ease: Ease.Ease})
+        .setTween(".client-item__letter_3", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    var letterElementsParralax4 = new TimelineMax()
-        .from('.client-item__letter_4', 1, {transform: 'translateY(0)'})
-        .to('.client-item__letter_4', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.client-item__letter_4',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(letterElementsParralax4)
+    new ScrollMagic.Scene({triggerElement: ".client-item__letter_4",duration: "100%", ease: Ease.Ease})
+        .setTween(".client-item__letter_4", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
-
 
 // team
     // menu logo color
     new ScrollMagic.Scene({
         triggerElement: "#team",
-        triggerHook: 0.1,
+        triggerHook: 0.5,
         duration: "100%",
         offset: 0
-    })
-        .setClassToggle(".main-logo__img.black", "hidden")
-        .addTo(controller);
+    }).setClassToggle(".main-logo__img.black", "hidden").addTo(controller);
+
     // lang item color
     new ScrollMagic.Scene({
         triggerElement: "#team",
-        triggerHook: 0.1,
+        triggerHook: 0.5,
         duration: "100%",
         offset: 0
-    })
-        .setClassToggle(".languages__item", "white")
-        .addTo(controller);
+    }).setClassToggle(".languages__item", "white").addTo(controller);
+
+    // burger color
+    new ScrollMagic.Scene({
+        triggerElement: "#team",
+        triggerHook: 0.5,
+        duration: "100%",
+        offset: 0
+    }).setClassToggle(".main-header-burger", "white").addTo(controller);
+
     // menu item color
     new ScrollMagic.Scene({
         triggerElement: "#team",
         triggerHook: 0.9,
         duration: "100%",
         offset: 0
-    })
-        .setClassToggle(".main-menu__item", "white")
+    }).setClassToggle(".main-menu__item", "white").addTo(controller);
+
+    // if(desctopWidth) {
+        //team content fix
+        var teamSectionFix = new TimelineMax()
+            .from(["#team-section-bg"], 1, {transform: 'scale(1.1)', ease: Ease.Ease})
+            .to(["#team-section-bg"], 1, {transform: 'scale(1)', ease: Ease.Ease});
+        new ScrollMagic.Scene({
+            triggerElement: "#team-section-bg",
+            triggerHook: 0,
+            duration: "150%", // use full viewport
+            offset: 0
+        }).setTween(teamSectionFix).setPin("#team-section-bg").addTo(controller);
+
+        var teamSectionFix2 = new TimelineMax()
+            .from(["#team-section-bg", "#team .section-content-title"], 1, { opacity: 1, ease: Ease.Ease})
+            .to(["#team-section-bg", "#team .section-content-title"], 1, { opacity: 0, ease: Ease.Ease});
+        new ScrollMagic.Scene({
+            triggerElement: "#team-section-bg",
+            triggerHook: 0,
+            duration: "80%",
+            offset: 0
+        }).setTween(teamSectionFix2).addTo(controller);
+
+
+    // if(mobileWidth) {
+    //     //team content fix
+    //     var teamSectionFix = new TimelineMax()
+    //         .from(["#team-section-bg"], 1, {transform: 'scale(1.1)', ease: Linear.easeNone})
+    //         .to(["#team-section-bg"], 1, {transform: 'scale(1)', ease: Linear.easeNone});
+    //     new ScrollMagic.Scene({
+    //         triggerElement: "#team-section-bg",
+    //         triggerHook: 0,
+    //         duration: "50%", // use full viewport
+    //         offset: 0
+    //     }).setTween(teamSectionFix).setPin("#team-section-bg").addTo(controller);
+    // }
+
+  //team letters parralax
+    new ScrollMagic.Scene({triggerElement: ".team-item__letter_1",duration: "100%", ease: Ease.Ease})
+        .setTween(".team-item__letter_1", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    //team content fix
-    var teamSectionFix = new TimelineMax()
-        .from(["#team-section-bg"], 1, {transform: 'scale(1.1)', opacity: 1, ease: Linear.easeNone})
-        .to(["#team-section-bg"], 1, {transform: 'scale(1)', opacity: 0, ease: Linear.easeNone});
-    new ScrollMagic.Scene({
-        triggerElement: "#team-section-bg",
-        triggerHook: 0,
-        duration: "100%", // use full viewport
-        offset: 0
-    })
-        .setTween(teamSectionFix)
-        // .setPin("#team-section-bg")
-        .addTo(controller);
-
-  //team letter parralax
-    var teamLetterElementsParralax1 = new TimelineMax()
-        .from('.team-item__letter_1', 1, {transform: 'translateY(0)'})
-        .to('.team-item__letter_1', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.team-item__letter_1',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(teamLetterElementsParralax1)
-        .addTo(controller);
-
-    var teamLetterElementsParralax2 = new TimelineMax()
-        .from('.team-item__letter_2', 1, {transform: 'translateY(0)'})
-        .to('.team-item__letter_2', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.team-item__letter_2',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(teamLetterElementsParralax2)
+    new ScrollMagic.Scene({triggerElement: ".team-item__letter_2",duration: "100%", ease: Ease.Ease})
+        .setTween(".team-item__letter_2", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
 // values
   // values number parralax
-    var valuesNumberElementsParralax1 = new TimelineMax()
-        .from('.values-item__number_1 img', 1, {transform: 'translateY(0)'})
-        .to('.values-item__number_1 img', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.values-item__number_1',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(valuesNumberElementsParralax1)
+    new ScrollMagic.Scene({triggerElement: ".values-item__number_1 img",duration: "100%", ease: Ease.Ease})
+        .setTween(".values-item__number_1 img", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    var valuesNumberElementsParralax2 = new TimelineMax()
-        .from('.values-item__number_2 img', 1, {transform: 'translateY(0)'})
-        .to('.values-item__number_2 img', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.values-item__number_2 img',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(valuesNumberElementsParralax2)
+    new ScrollMagic.Scene({triggerElement: ".values-item__number_2 img",duration: "100%", ease: Ease.Ease})
+        .setTween(".values-item__number_2 img", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
 
-    var valuesNumberElementsParralax3 = new TimelineMax()
-        .from('.values-item__number_3 img', 1, {transform: 'translateY(0)'})
-        .to('.values-item__number_3 img', 1, {transform: 'translateY(-20%)'});
-    new ScrollMagic.Scene({
-        triggerElement: '.values-item__number_3 img',
-        triggerHook: 1,
-        duration: "100%",
-        offset: 0
-    })
-        .setTween(valuesNumberElementsParralax3)
+    new ScrollMagic.Scene({triggerElement: ".values-item__number_3 img",duration: "100%", ease: Ease.Ease})
+        .setTween(".values-item__number_3 img", {y: "25%", ease: Linear.easeNone})
         .addTo(controller);
-
 };

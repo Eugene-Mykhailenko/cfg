@@ -5,7 +5,7 @@ module.exports = (paths) => {
         module: {
             rules: [
                 {
-                    test: /\.(png|jpg|jpeg|svg)$/,
+                    test: /\.(png|jpg|jpeg|svg|mov|mp4)$/,
                     loader: 'file-loader',
                     options: {
                         name: 'img/[name].[ext]'

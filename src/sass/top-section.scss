@@ -19,6 +19,9 @@
   .section-content-text {
     @extend %pull-right-3;
 
+    //padding-left: calc(((100%/4) * 1) + 5px);
+
+
     .top-section__subtitle {
       transition-delay: 1.2s;
     }
@@ -26,21 +29,23 @@
 
   &__title {
     font-weight: 300;
-    color: $lighten-color;
+    color: $lightenColor;
   }
 
   &__subtitle {
     margin-top: 80px;
     line-height: 26px;
-    color: $lighten-color;
+    color: $lightenColor;
 
     @media screen and (max-width: $desctopWidth) {
       margin-top: 40px;
     }
-  }
 
-  @media screen and (max-width: $mobileWidth) {
-
+    @media screen and (max-width: $mobileWidth) {
+      margin-top: 30px;
+      font-size: 13px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -62,6 +67,26 @@
     background: url("../img/main-gradient.svg");
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: $tabletWidth) {
+      background-position: 80%;
+    }
+
+    @media screen and (max-width: $mobileWidth) {
+      background-position: -60%;
+    }
+  }
+
+  @media screen and (max-width: $tabletWidth) {
+
+    background: url("../img/video-poster.jpg");
+    background-position: center;
+    background-size: cover;
+
+    iframe {
+      display: none;
+      visibility: hidden;
+    }
   }
 }
 
@@ -75,39 +100,27 @@
   background-color: #fff;
 }
 
-.video-foreground,
-.video-background iframe {
+#videoBG {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  z-index: -99;
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .video-foreground {
-    height: 300%;
-    top: -100%;
+  #videoBG {
+    width:100%;
+    height: auto;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground {
-    width: 300%;
-    left: -100%;
+  #videoBG {
+    width:auto;
+    height: 100%;
   }
 }
-@media all and (max-width: 600px) {
-  .vid-info {
-    width: 50%;
-    padding: .5rem;
-  }
-  .vid-info h1 {
-    margin-bottom: .2rem;
-  }
-}
-@media all and (max-width: 500px) {
-  .vid-info .acronym {
+
+@media screen and (max-width: $mobileWidth) {
+  #videoBG {
     display: none;
   }
 }

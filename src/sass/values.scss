@@ -2,7 +2,7 @@
 .values {
   position: relative;
   overflow: hidden;
-  background-color: $darkGray;
+  background-color: $darkGrayColor;
 
   &:before,
   &:after {
@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     height: 0;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   }
 
   &:before {
@@ -26,18 +26,25 @@
     margin-bottom: 50px;
     font-size: 180px;
     line-height: 170px;
-    font-weight: 400;
-    color: $darken-color;
+    font-weight: 300;
+    color: $darkenColor;
 
     @media screen and (max-width: $desctopWidth) {
       margin-bottom: 30px;
       font-size: 134px;
       line-height: 126px;
     }
+
+    @media screen and (max-width: $mobileWidth) {
+      margin: 0;
+      font-size: 54px;
+      line-height: 51px;
+      font-weight: 300;
+    }
   }
 
   .section-content-text {
-    color: $lighten-color;
+    color: $lightenColor;
   }
 
   &-item {
@@ -48,10 +55,22 @@
       padding: 150px 0;
     }
 
+    @media screen and (max-width: $mobileWidth) {
+      padding: 150px 0 0;
+
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+
     &:nth-child(1) {
       .values-item__img {
-        right: calc(((100%/12) * 7) + 15px);
+        right: calc(((100% / 12) * 7) + 15px);
         justify-content: flex-end;
+
+        @media screen and (max-width: $mobileWidth) {
+          right: calc(((100%/4) * 1) + 5px);
+        }
 
         > img {
           max-height: 590px;
@@ -59,12 +78,16 @@
           @media screen and (max-width: $desctopWidth) {
             max-height: 445px
           }
+
+          @media screen and (max-width: $mobileWidth) {
+            max-height: 225px;
+          }
         }
       }
 
       .values-item__content {
-        left: calc(((100%/12) * 7) + 15px);
-        right: calc(((100%/12) * 1) + 15px);
+        left: calc(((100% / 12) * 7) + 15px);
+        right: calc(((100% / 12) * 1) + 15px);
       }
 
       .values-item__number {
@@ -75,12 +98,21 @@
         @media screen and (max-width: $desctopWidth) {
           //width: 256px;
         }
+
+        @media screen and (max-width: $mobileWidth) {
+          top: 10%;
+          transform: translate(50%, -50%);
+        }
       }
     }
 
     &:nth-child(2) {
       .values-item__img {
-        left: calc(((100%/12) * 8) + 15px);
+        left: calc(((100% / 12) * 8) + 15px);
+
+        @media screen and (max-width: $mobileWidth) {
+          left: calc(((100%/4) * 1) + 5px);
+        }
 
         > img {
           max-height: 663px;
@@ -92,8 +124,8 @@
       }
 
       .values-item__content {
-        left: calc(((100%/12) * 2) + 15px);
-        right: calc(((100%/12) * 6) + 15px);
+        left: calc(((100% / 12) * 2) + 15px);
+        right: calc(((100% / 12) * 6) + 15px);
       }
 
       .values-item__number {
@@ -104,13 +136,22 @@
         @media screen and (max-width: $desctopWidth) {
           //width: 222px;
         }
+
+        @media screen and (max-width: $mobileWidth) {
+          transform: translate(-52%, -35%);
+        }
+
       }
     }
 
     &:nth-child(3) {
       .values-item__img {
-        right: calc(((100%/12) * 6) + 15px);
+        right: calc(((100% / 12) * 6) + 15px);
         justify-content: flex-end;
+
+        @media screen and (max-width: $mobileWidth) {
+          right: calc(((100%/4) * 1) + 5px);
+        }
 
         > img {
           max-height: 740px;
@@ -122,8 +163,8 @@
       }
 
       .values-item__content {
-        left: calc(((100%/12) * 7) + 15px);
-        right: calc(((100%/12) * 1) + 15px);
+        left: calc(((100% / 12) * 7) + 15px);
+        right: calc(((100% / 12) * 1) + 15px);
       }
 
       .values-item__number {
@@ -134,12 +175,21 @@
         @media screen and (max-width: $desctopWidth) {
           //width: 222px;
         }
+
+        @media screen and (max-width: $mobileWidth) {
+          bottom: 100%;
+          transform: translate(39%, 68%);
+        }
       }
     }
 
     &__img {
       position: relative;
       display: flex;
+
+      @media screen and (max-width: $mobileWidth) {
+        display: block;
+      }
 
       > img {
         display: block;
@@ -157,6 +207,11 @@
       @media screen and (max-width: $desctopWidth) {
         top: 150px;
       }
+
+      @media screen and (max-width: $mobileWidth) {
+        position: static;
+        margin-top: 23px;
+      }
     }
 
     &__title {
@@ -164,6 +219,10 @@
 
       @media screen and (max-width: $desctopWidth) {
         margin-bottom: 40px;
+      }
+
+      @media screen and (max-width: $mobileWidth) {
+        margin-bottom: 23px;
       }
     }
 

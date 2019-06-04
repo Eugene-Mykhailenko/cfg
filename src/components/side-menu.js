@@ -1,7 +1,8 @@
 import $ from 'jquery';
 
+const MAIN_MENU = '#main-header';
 const MENU = '.side-menu';
-const BURGER = '.main-header__burger';
+const BURGER = '.main-header-burger';
 const ACTIVE = 'active';
 
 export const setupSideMenu = () => {
@@ -19,17 +20,24 @@ export const setupSideMenu = () => {
       return;
     }
 
-    $(MENU).removeClass(ACTIVE);
+    // $(MENU).addClass(ACTIVE);
   });
 
   doc.on('click', BURGER, () => {
+    $(MAIN_MENU).addClass('open-menu');
     $(MENU).addClass(ACTIVE);
+    $(BURGER).addClass(ACTIVE);
   });
 
-  doc.on('click', '.side-menu .btn-close, .side-menu-nav__item', e => {
-    // console.log('ddd');
-    // e.preventDefault();
-
+  doc.on('click', '.main-header-burger.active', e => {
+    $(MAIN_MENU).removeClass('open-menu');
     $(MENU).removeClass(ACTIVE);
+    $(BURGER).removeClass(ACTIVE);
+  });
+
+  doc.on('click', '.side-menu-nav__item', e => {
+    $(MAIN_MENU).removeClass('open-menu');
+    $(MENU).removeClass(ACTIVE);
+    $(BURGER).removeClass(ACTIVE);
   });
 };

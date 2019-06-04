@@ -8,12 +8,12 @@ block main-header
 
 block main-container
     section.top-section
-        header#top-section-header.main-header.anim-digit
+        header#main-header.main-header.anim-digit
             include ../includes/header
         div.video-overlay
         div.video-background
-            div.video-foreground
-                iframe(src="https://www.youtube.com/embed/3CBA5Q3bzsQ?&loop=1&playlist=3CBA5Q3bzsQ&showinfo=0&controls=0&disablekb=1&autohide=1&rel=0&autoplay=1&mute=1", frameborder="0", allowfullscreen)
+            video(id="videoBG", poster=require('../../img/video-poster.jpg') autoplay muted loop)
+                source(src=require('../../img/bgvideo.mp4'), type="video/mp4")
         div#top-section.section-wrap
             div.container
                 h1.section-content-title.top-section__title

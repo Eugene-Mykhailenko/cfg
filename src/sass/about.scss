@@ -1,5 +1,6 @@
 .about {
   position: relative;
+  overflow: hidden;
 
   &-img {
     position: absolute;
@@ -8,6 +9,15 @@
     z-index: -1;
     height: 100%;
     width: auto;
+
+    @media screen and (max-width: $mobileWidth) {
+      top: -15px;
+      left: -25%;
+      height: auto;
+      width: 150%;
+      max-width: initial;
+    }
+
   }
 
   .section-content-title {
@@ -18,10 +28,19 @@
       margin-top: 31px;
       margin-bottom: 73px;
     }
+
+    @media screen and (max-width: $mobileWidth) {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
   }
 
   .section-content-text {
     margin-bottom: 50px;
+
+    @media screen and (max-width: $mobileWidth) {
+      margin-bottom: 0;
+    }
   }
 
 }

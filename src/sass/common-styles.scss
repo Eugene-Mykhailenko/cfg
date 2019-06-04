@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: $lighten-color;
+  background-color: $lightenColor;
 }
 
 .main-block {
@@ -28,6 +28,10 @@ body {
     max-width: 1350px;
     padding: 0 15px;
   }
+
+  @media screen and (max-width: $mobileWidth) {
+    padding: 0 20px;
+  }
 }
 
 .section-wrap {
@@ -43,13 +47,17 @@ body {
   @media screen and (max-width: $desctopWidth) {
     padding: 140px 0 60px;
   }
+
+  @media screen and (max-width: $mobileWidth) {
+    padding: 105px 0 60px;
+  }
 }
 
 .section-more {
   padding-bottom: 100px;
 }
 
-.section-content{
+.section-content {
 
   &-title {
     @extend %pull-left-2;
@@ -87,25 +95,43 @@ body {
     line-height: 15px;
   }
 
+  @media screen and (max-width: $mobileWidth) {
+    justify-content: center;
+    top: 40px;
+    padding: 0 20px;
+  }
+
   &__text {
     position: relative;
     margin-left: calc(((100%/12) * 5) + 15px);
 
+    @media screen and (max-width: $mobileWidth) {
+      margin-left: 0;
+      font-size: 10px;
+      line-height: 14px;
+      letter-spacing: 0.6px;
+    }
+
     &:after {
       content: '';
       position: absolute;
-      right: calc(100% + 20px);
+      left: -120px;
       top: 0;
       bottom: 0;
       width: 100px;
       height: 1px;
       margin: auto;
       background-color: $primaryColor;
+
+      @media screen and (max-width: $mobileWidth) {
+        left: -40px;
+        width: 30px;
+      }
     }
   }
 
   &.white {
-    color: $lighten-color;
+    color: $lightenColor;
   }
 }
 

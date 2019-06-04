@@ -1,7 +1,7 @@
 
 .clients {
   position: relative;
-  background-color: $darkGray;
+  background-color: $darkGrayColor;
 
   .clients-section-bg {
     position: absolute;
@@ -15,7 +15,7 @@
   }
 
   .section-content-title {
-    color: $lighten-color;
+    color: $lightenColor;
   }
 
   .section-more {
@@ -32,6 +32,14 @@
 
   @media screen and (max-width: $desctopWidth) {
     margin-bottom: 150px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    margin-bottom: 120px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-child(2n) {
@@ -79,6 +87,16 @@
       font-size: 12px;
       line-height: 15px;
     }
+
+    @media screen and (max-width: $mobileWidth) {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-bottom: 13px;
+      font-size: 11px;
+      line-height: 14px;
+      letter-spacing: 0.6px;
+    }
   }
 
   &__letter {
@@ -99,11 +117,19 @@
     position: relative;
     margin-bottom: 45px;
     z-index: 2;
+
+    @media screen and (max-width: $mobileWidth) {
+      margin-bottom: 25px;
+    }
   }
 
   &__text {
     position: relative;
     margin-bottom: 30px;
     z-index: 2;
+
+    @media screen and (max-width: $mobileWidth) {
+      margin-bottom: 20px;
+    }
   }
 }
