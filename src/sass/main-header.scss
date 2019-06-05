@@ -30,7 +30,7 @@
     position: absolute;
     top: 100vh;
     left: 0;
-    display: none;
+    display: flex;
     align-items: center;
     width: 100vh;
     height: 110px;
@@ -43,8 +43,8 @@
       padding: 60px 100px 0 60px;
     }
 
-    @media screen and (min-width: $tabletWidth) {
-      display: flex;
+    @media screen and (max-width: $tabletWidth) {
+      display: none;
     }
 
   }
@@ -82,6 +82,10 @@
       left: 60px;
     }
 
+    @media screen and (max-width: $tabletWidth) {
+      left: 40px;
+    }
+
     @media screen and (max-width: $mobileWidth) {
       top: 10px;
       left: 20px;
@@ -94,6 +98,11 @@
       @media screen and (max-width: $desctopWidth) {
         width: 165px;
         height: 85px;
+      }
+
+      @media screen and (max-width: $tabletWidth) {
+        width: 123px;
+        height: 63px;
       }
 
       @media screen and (max-width: $mobileWidth) {

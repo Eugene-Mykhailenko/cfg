@@ -28,7 +28,9 @@ body {
     max-width: 1350px;
     padding: 0 15px;
   }
-
+  @media screen and (max-width: $mobileWidth) {
+    padding: 0 20px;
+  }
   @media screen and (max-width: $mobileWidth) {
     padding: 0 20px;
   }
@@ -64,11 +66,22 @@ body {
     @extend %pull-right-1;
     font-family: $ttbells-font;
     font-weight: 400;
+
+    @media screen and (max-width: $tabletWidth) {
+      //@extend %pull-left-1;
+      //padding-right: 20px;
+      //@extend .pull-left-1;
+    }
   }
 
   &-text {
     @extend %pull-left-5;
     @extend %pull-right-1;
+
+    @media screen and (max-width: $tabletWidth) {
+      //padding-left: calc(((100% / 8) * 3) + 10px);
+      //padding-right: 20px;
+    }
   }
 }
 
@@ -95,15 +108,24 @@ body {
     line-height: 15px;
   }
 
-  @media screen and (max-width: $mobileWidth) {
-    justify-content: center;
+  @media screen and (max-width: $tabletWidth) {
     top: 40px;
     padding: 0 20px;
+  }
+
+  @media screen and (max-width: $mobileWidth) {
+    justify-content: center;
   }
 
   &__text {
     position: relative;
     margin-left: calc(((100%/12) * 5) + 15px);
+
+    @media screen and (max-width: $tabletWidth) {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.8px;
+    }
 
     @media screen and (max-width: $mobileWidth) {
       margin-left: 0;
@@ -122,6 +144,11 @@ body {
       height: 1px;
       margin: auto;
       background-color: $primaryColor;
+
+      @media screen and (max-width: $tabletWidth) {
+        left: -85px;
+        width: 65px;
+      }
 
       @media screen and (max-width: $mobileWidth) {
         left: -40px;
