@@ -493,6 +493,9 @@ body {
   @media screen and (max-width: 767px) {
     .container {
       padding: 0 20px; } }
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 0 20px; } }
 
 .section-wrap {
   position: relative;
@@ -538,14 +541,21 @@ body {
       max-width: 1350px;
       font-size: 12px;
       line-height: 15px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1024px) {
     .section-title {
-      justify-content: center;
       top: 40px;
       padding: 0 20px; } }
+  @media screen and (max-width: 767px) {
+    .section-title {
+      justify-content: center; } }
   .section-title__text {
     position: relative;
     margin-left: calc(((100%/12) * 5) + 15px); }
+    @media screen and (max-width: 1024px) {
+      .section-title__text {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.8px; } }
     @media screen and (max-width: 767px) {
       .section-title__text {
         margin-left: 0;
@@ -562,6 +572,10 @@ body {
       height: 1px;
       margin: auto;
       background-color: #CA8662; }
+      @media screen and (max-width: 1024px) {
+        .section-title__text:after {
+          left: -85px;
+          width: 65px; } }
       @media screen and (max-width: 767px) {
         .section-title__text:after {
           left: -40px;
@@ -618,7 +632,7 @@ img {
   padding-left: calc(((100%/12) * 1) + 15px); }
   @media screen and (max-width: 1024px) {
     .team-item:nth-child(1) .team-item__img {
-      padding-left: calc(((100%/8) * 1) + 10px); } }
+      padding-left: calc(((100%/16) * 1) + 15px); } }
   @media screen and (max-width: 767px) {
     .team-item:nth-child(1) .team-item__img {
       padding-left: 5px; } }
@@ -627,7 +641,7 @@ img {
   padding-right: calc(((100%/12) * 1) + 15px); }
   @media screen and (max-width: 1024px) {
     .section-content-title, .section-content-text, .client-item, .team-item:nth-child(2) .team-item__img, .contacts-address, .contacts-item, .contacts__copy {
-      padding-right: calc(((100%/8) * 1) + 10px); } }
+      padding-right: calc(((100%/16) * 1) + 15px); } }
   @media screen and (max-width: 767px) {
     .section-content-title, .section-content-text, .client-item, .team-item:nth-child(2) .team-item__img, .contacts-address, .contacts-item, .contacts__copy {
       padding-right: 5px; } }
@@ -636,7 +650,7 @@ img {
   padding-left: calc(((100%/12) * 2) + 15px); }
   @media screen and (max-width: 1024px) {
     .section-content-title, .contacts-address {
-      padding-left: calc(((100%/8) * 2) + 10px); } }
+      padding-left: calc(((100%/16) * 2) + 15px); } }
   @media screen and (max-width: 767px) {
     .section-content-title, .contacts-address {
       padding-left: 5px; } }
@@ -645,7 +659,7 @@ img {
   padding-left: calc(((100%/12) * 3) + 15px); }
   @media screen and (max-width: 1024px) {
     .client-item:nth-child(2n) {
-      padding-left: calc(((100%/8) * 3) + 10px); } }
+      padding-left: calc(((100%/16) * 3) + 15px); } }
   @media screen and (max-width: 767px) {
     .client-item:nth-child(2n) {
       padding-left: 5px; } }
@@ -654,7 +668,7 @@ img {
   padding-right: calc(((100%/12) * 3) + 15px); }
   @media screen and (max-width: 1024px) {
     .top-section .section-content-text, .client-item:nth-child(2n) {
-      padding-right: calc(((100%/8) * 3) + 10px); } }
+      padding-right: calc(((100%/16) * 3) + 15px); } }
   @media screen and (max-width: 767px) {
     .top-section .section-content-text, .client-item:nth-child(2n) {
       padding-right: 5px; } }
@@ -663,7 +677,7 @@ img {
   padding-left: calc(((100%/12) * 4) + 15px); }
   @media screen and (max-width: 1024px) {
     .team-item:nth-child(2) .team-item__img {
-      padding-left: calc(((100%/8) * 4) + 10px); } }
+      padding-left: calc(((100%/16) * 4) + 15px); } }
   @media screen and (max-width: 767px) {
     .team-item:nth-child(2) .team-item__img {
       padding-left: 5px; } }
@@ -672,7 +686,7 @@ img {
   padding-right: calc(((100%/12) * 4) + 15px); }
   @media screen and (max-width: 1024px) {
     .team-item:nth-child(1) .team-item__img {
-      padding-right: calc(((100%/8) * 4) + 10px); } }
+      padding-right: calc(((100%/16) * 4) + 15px); } }
   @media screen and (max-width: 767px) {
     .team-item:nth-child(1) .team-item__img {
       padding-right: 5px; } }
@@ -681,7 +695,7 @@ img {
   padding-left: calc(((100%/12) * 5) + 15px); }
   @media screen and (max-width: 1024px) {
     .section-content-text, .client-item, .contacts-item, .contacts__copy {
-      padding-left: calc(((100%/8) * 5) + 10px); } }
+      padding-left: calc(((100%/16) * 5) + 15px); } }
   @media screen and (max-width: 767px) {
     .section-content-text, .client-item, .contacts-item, .contacts__copy {
       padding-left: 5px; } }
@@ -706,7 +720,7 @@ img {
     position: absolute;
     top: 100vh;
     left: 0;
-    display: none;
+    display: flex;
     align-items: center;
     width: 100vh;
     height: 110px;
@@ -717,9 +731,9 @@ img {
     @media screen and (max-width: 1440px) {
       .main-header .nav-wrap {
         padding: 60px 100px 0 60px; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1024px) {
       .main-header .nav-wrap {
-        display: flex; } }
+        display: none; } }
   .main-header .control-wrap {
     position: absolute;
     top: 80px;
@@ -746,6 +760,9 @@ img {
     @media screen and (max-width: 1440px) {
       .main-header .main-logo {
         left: 60px; } }
+    @media screen and (max-width: 1024px) {
+      .main-header .main-logo {
+        left: 40px; } }
     @media screen and (max-width: 767px) {
       .main-header .main-logo {
         top: 10px;
@@ -757,6 +774,10 @@ img {
         .main-header .main-logo img {
           width: 165px;
           height: 85px; } }
+      @media screen and (max-width: 1024px) {
+        .main-header .main-logo img {
+          width: 123px;
+          height: 63px; } }
       @media screen and (max-width: 767px) {
         .main-header .main-logo img {
           width: 62px;
@@ -922,6 +943,12 @@ img {
     transition-delay: 0.3s; }
   .top-section .section-content-title div:nth-child(3) {
     transition-delay: 0.6s; }
+  @media screen and (max-width: 1024px) {
+    .top-section .section-content-title {
+      padding-left: calc(((100% / 8) * 1) + 10px); } }
+  @media screen and (max-width: 1024px) {
+    .top-section .section-content-text {
+      padding-right: calc(((100% / 8) * 1) + 10px); } }
   .top-section .section-content-text .top-section__subtitle {
     transition-delay: 1.2s; }
   .top-section__title {
