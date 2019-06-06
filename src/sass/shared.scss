@@ -61,10 +61,6 @@
   %pull-left-#{$i} {
     padding-left: calc(((100%/12) * #{$i}) + 15px);
 
-    @media screen and (max-width: $tabletWidth) {
-      padding-left: calc(((100%/16) * #{$i}) + 15px);
-    }
-
     @media screen and (max-width: $mobileWidth) {
       padding-left: 5px;
     }
@@ -72,10 +68,6 @@
 
   %pull-right-#{$i} {
     padding-right: calc(((100%/12) * #{$i}) + 15px);
-
-    @media screen and (max-width: $tabletWidth) {
-      padding-right: calc(((100%/16) * #{$i}) + 15px);
-    }
 
     @media screen and (max-width: $mobileWidth) {
       padding-right: 5px;

@@ -218,6 +218,29 @@ export const setupScrollMagic = () => {
             }).setTween(teamSectionFix2).addTo(controller);
         }
 
+    if(tabletWidth) {
+        //team content fix
+        let teamSectionFix = new TimelineMax()
+            .from(["#team-section-bg"], 1, {transform: 'scale(1.1)', ease: Ease.Ease})
+            .to(["#team-section-bg"], 1, {transform: 'scale(1)', ease: Ease.Ease});
+        new ScrollMagic.Scene({
+            triggerElement: "#team-section-bg",
+            triggerHook: 0,
+            duration: "100%", // use full viewport
+            offset: 0
+        }).setTween(teamSectionFix).setPin("#team-section-bg").addTo(controller);
+
+        let teamSectionFix2 = new TimelineMax()
+            .from(["#team-section-bg", "#team .section-content-title"], 1, { opacity: 1, ease: Ease.Ease})
+            .to(["#team-section-bg", "#team .section-content-title"], 1, { opacity: 0, ease: Ease.Ease});
+        new ScrollMagic.Scene({
+            triggerElement: "#team-section-bg",
+            triggerHook: 0,
+            duration: "50%",
+            offset: 0
+        }).setTween(teamSectionFix2).addTo(controller);
+    }
+
         if(mobileWidth) {
             //team content fix
             let teamSectionFix = new TimelineMax()

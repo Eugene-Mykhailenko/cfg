@@ -55,6 +55,11 @@
       padding: 150px 0;
     }
 
+    @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+      display: flex;
+      padding: 110px 0;
+    }
+
     @media screen and (max-width: $mobileWidth) {
       padding: 150px 0 0;
 
@@ -79,6 +84,10 @@
             max-height: 445px
           }
 
+          @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+            right: 20px;
+          }
+
           @media screen and (max-width: $mobileWidth) {
             max-height: 225px;
           }
@@ -88,6 +97,10 @@
       .values-item__content {
         left: calc(((100% / 12) * 7) + 15px);
         right: calc(((100% / 12) * 1) + 15px);
+
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          padding-top: 150px;
+        }
       }
 
       .values-item__number {
@@ -97,6 +110,11 @@
 
         @media screen and (max-width: $desctopWidth) {
           //width: 256px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          width: 290px;
+          top: 0;
         }
 
         @media screen and (max-width: $mobileWidth) {
@@ -114,11 +132,20 @@
           left: calc(((100%/4) * 1) + 5px);
         }
 
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          padding-top: 150px;
+          order: 2;
+        }
+
         > img {
           max-height: 663px;
 
           @media screen and (max-width: $desctopWidth) {
             max-height: 445px
+          }
+
+          @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+            left: 20px;
           }
         }
       }
@@ -135,6 +162,11 @@
 
         @media screen and (max-width: $desctopWidth) {
           //width: 222px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          width: 290px;
+          transform: translate(15%, 25%);
         }
 
         @media screen and (max-width: $mobileWidth) {
@@ -159,6 +191,10 @@
           @media screen and (max-width: $desctopWidth) {
             max-height: 443px
           }
+
+          @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+            right: 20px;
+          }
         }
       }
 
@@ -176,6 +212,15 @@
           //width: 222px;
         }
 
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          width: 290px;
+          transform: translate(0, 40%);
+        }
+
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          //transform: translate(25%, 40%);
+        }
+
         @media screen and (max-width: $mobileWidth) {
           bottom: 100%;
           transform: translate(39%, 68%);
@@ -187,6 +232,16 @@
       position: relative;
       display: flex;
 
+      @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+        display: block;
+        width: 100%;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
       @media screen and (max-width: $mobileWidth) {
         display: block;
       }
@@ -197,6 +252,13 @@
         height: auto;
         max-width: 100%;
         max-height: 590px;
+
+        @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+          width: 150%;
+          max-height: 1000px;
+          position: absolute;
+          max-width: 150%;
+        }
       }
     }
 
@@ -206,6 +268,16 @@
 
       @media screen and (max-width: $desctopWidth) {
         top: 150px;
+      }
+
+      @media screen and (min-width: 768px) and (max-width: $tabletWidth) {
+        position: relative;
+        width: 100%;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
       }
 
       @media screen and (max-width: $mobileWidth) {

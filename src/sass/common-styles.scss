@@ -28,7 +28,7 @@ body {
     max-width: 1350px;
     padding: 0 15px;
   }
-  @media screen and (max-width: $mobileWidth) {
+  @media screen and (max-width: $tabletWidth) {
     padding: 0 20px;
   }
   @media screen and (max-width: $mobileWidth) {
@@ -68,9 +68,8 @@ body {
     font-weight: 400;
 
     @media screen and (max-width: $tabletWidth) {
-      //@extend %pull-left-1;
-      //padding-right: 20px;
-      //@extend .pull-left-1;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
     }
   }
 
@@ -79,8 +78,8 @@ body {
     @extend %pull-right-1;
 
     @media screen and (max-width: $tabletWidth) {
-      //padding-left: calc(((100% / 8) * 3) + 10px);
-      //padding-right: 20px;
+      padding-left: calc(((100% / 8) * 3) + 20px) !important;
+      padding-right: 20px !important;
     }
   }
 }
@@ -125,6 +124,7 @@ body {
       font-size: 14px;
       line-height: 17px;
       letter-spacing: 0.8px;
+      margin-left: calc(((100%/8) * 3) + 20px);
     }
 
     @media screen and (max-width: $mobileWidth) {
