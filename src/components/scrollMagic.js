@@ -218,7 +218,7 @@ export const setupScrollMagic = () => {
             }).setTween(teamSectionFix2).addTo(controller);
         }
 
-    if(tabletWidth) {
+    if(!mobileWidth && tabletWidth) {
         //team content fix
         let teamSectionFix = new TimelineMax()
             .from(["#team-section-bg"], 1, {transform: 'scale(1.1)', ease: Ease.Ease})
