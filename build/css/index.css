@@ -970,9 +970,6 @@ img {
     @media screen and (max-width: 1024px) {
       .video-background:after {
         background-position: 80%; } }
-    @media screen and (max-width: 767px) {
-      .video-background:after {
-        background-position: -60%; } }
   @media screen and (max-width: 1024px) {
     .video-background {
       background: url(../img/video-poster.jpg);
