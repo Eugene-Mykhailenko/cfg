@@ -1002,10 +1002,6 @@ img {
     width: auto;
     height: 100%; } }
 
-@media screen and (max-width: 767px) {
-  #videoBG {
-    display: none; } }
-
 .about {
   position: relative;
   overflow: hidden; }
