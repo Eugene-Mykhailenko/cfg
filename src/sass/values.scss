@@ -298,16 +298,8 @@
       }
     }
 
-    &__text {
-
-    }
-
     &__number {
       position: absolute;
-
-      @media screen and (max-width: $desctopWidth) {
-
-      }
 
       img {
         display: block;
@@ -316,6 +308,10 @@
         max-width: 100%;
         max-height: 360px;
 
+
+        @media screen and (max-width: $mobileWidth) {
+          max-height: 170px;
+        }
       }
     }
   }

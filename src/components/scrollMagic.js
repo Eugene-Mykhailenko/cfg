@@ -190,7 +190,7 @@ export const setupScrollMagic = () => {
     new ScrollMagic.Scene({
         triggerElement: "#team",
         triggerHook: 0.9,
-        duration: "100%",
+        duration: "140%",
         offset: 0
     }).setClassToggle(".main-menu__item", "white").addTo(controller);
 
@@ -213,7 +213,7 @@ export const setupScrollMagic = () => {
             new ScrollMagic.Scene({
                 triggerElement: "#team-section-bg",
                 triggerHook: 0,
-                duration: "80%",
+                duration: "100%",
                 offset: 0
             }).setTween(teamSectionFix2).addTo(controller);
         }
@@ -259,7 +259,7 @@ export const setupScrollMagic = () => {
             new ScrollMagic.Scene({
                 triggerElement: "#team-section-bg",
                 triggerHook: 0,
-                duration: "50%",
+                duration: "80%",
                 offset: 0
             }).setTween(teamSectionFix2).addTo(controller);
         }
