@@ -1,8 +1,9 @@
 %menu-item {
   position: relative;
   margin-right: 40px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   color: $darkenColor;
   transition: opacity 0.3s ease, color 0.3s ease;

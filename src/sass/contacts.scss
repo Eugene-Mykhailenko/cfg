@@ -17,8 +17,8 @@
     @extend %pull-left-2;
     @extend %pull-right-1;
     margin-bottom: 80px;
-    font-size: 60px;
-    line-height: 78px;
+    font-size: 48px;
+    line-height: 62px;
     font-family: $ttbells-font;
     color: $darkenColor;
 
@@ -87,8 +87,8 @@
     }
 
     &__title {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 16px;
+      line-height: 20px;
       margin-bottom: 1px;
       font-family: $formular-font;
 
@@ -108,8 +108,8 @@
 
     &__text {
       display: block;
-      font-size: 60px;
-      line-height: 78px;
+      font-size: 48px;
+      line-height: 62px;
       color: $darkenColor;
 
       @media screen and (max-width: $desctopWidth) {
@@ -127,8 +127,8 @@
   &__copy {
     @extend %pull-left-5;
     @extend %pull-right-1;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: auto;
     margin-bottom: 0;
 
@@ -152,8 +152,8 @@
   &-madeby {
     position: absolute;
     width: 165px;
-    right: -80px;
-    bottom: 0;
+    right: -100px;
+    bottom: 75px;
     transform: rotate(-90deg);
     transform-origin: bottom left;
 
@@ -161,13 +161,18 @@
       right: -100px;
     }
 
-    @media screen and (max-width: $desctopWidth) {
+    @media screen and (max-width: $tabletWidth) {
+      right: -125px;
+      bottom: 60px;
+    }
+
+    @media screen and (max-width: $mobileWidth) {
       right: -150px;
     }
 
     &__text {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 16px;
+      line-height: 20px;
       color: $darkenColor;
 
       @media screen and (max-width: $desctopWidth) {

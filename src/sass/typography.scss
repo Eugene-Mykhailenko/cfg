@@ -76,16 +76,11 @@ a {
 
 
 h1 {
-  font-size: 140px;
-  line-height: 140px;
+  font-size: 112px;
+  line-height: 112px;
   margin: 10px 0;
   font-weight: 400;
   font-family: $ttbells-font;
-
-  @media screen and (max-width: $desctopWidth) {
-    font-size: 112px;
-    line-height: 112px;
-  }
 
   @media screen and (max-width: $tabletWidth) {
     font-size: 108px;
@@ -99,8 +94,8 @@ h1 {
 }
 
 h2 {
-  font-size: 72px;
-  line-height: 86px;
+  font-size: 57px;
+  line-height: 69px;
   margin: 0;
   font-weight: 400;
   font-family: $ttbells-font;
@@ -117,8 +112,8 @@ h2 {
 }
 
 h3 {
-  font-size: 60px;
-  line-height: 78px;
+  font-size: 48px;
+  line-height: 62px;
   margin: 0;
   font-weight: 400;
   font-family: $ttbells-font;
@@ -136,9 +131,9 @@ h3 {
 
 p {
   margin-top: 0.9em;
-  margin-bottom: 0.9em;
-  font-size: 21px;
-  line-height: 32px;
+  margin-bottom: 1.5em;
+  font-size: 19px;
+  line-height: 29px;
 
   @media screen and (max-width: $desctopWidth) {
     font-size: 16px;
