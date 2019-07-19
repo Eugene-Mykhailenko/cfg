@@ -415,7 +415,7 @@ h2 {
   margin: 0;
   font-weight: 400;
   font-family: "TT Bells", sans-serif; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     h2 {
       font-size: 53px;
       line-height: 63px; } }
@@ -430,7 +430,7 @@ h3 {
   margin: 0;
   font-weight: 400;
   font-family: "TT Bells", sans-serif; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     h3 {
       font-size: 44px;
       line-height: 57px; } }
@@ -444,7 +444,7 @@ p {
   margin-bottom: 1.5em;
   font-size: 19px;
   line-height: 29px; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     p {
       font-size: 16px;
       line-height: 25px; } }
@@ -482,7 +482,7 @@ body {
   max-width: 1800px;
   padding: 0 20px;
   margin: 0 auto; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     .container {
       max-width: 1350px;
       padding: 0 15px; } }
@@ -502,7 +502,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 170px 0 75px; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     .section-wrap {
       padding: 140px 0 60px; } }
   @media screen and (max-width: 767px) {
@@ -540,7 +540,7 @@ body {
   text-align: center;
   font-size: 16px;
   line-height: 20px; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     .section-title {
       top: 60px;
       max-width: 1350px;
@@ -609,7 +609,7 @@ img {
     color: #fff !important; }
   .main-header .languages__item:first-child, .main-header .main-menu__item:first-child {
     margin-left: 0; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     .main-header .languages__item, .main-header .main-menu__item {
       margin-right: 30px;
       font-size: 12px;
@@ -711,7 +711,7 @@ img {
     z-index: 90;
     transform: rotate(-90deg);
     transform-origin: left top; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .main-header .nav-wrap {
         padding: 60px 100px 0 60px; } }
     @media screen and (max-width: 1024px) {
@@ -724,7 +724,7 @@ img {
     z-index: 100;
     display: flex;
     align-items: flex-start; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .main-header .control-wrap {
         top: 60px;
         right: 60px; } }
@@ -740,7 +740,7 @@ img {
     position: absolute;
     top: 30px;
     left: 70px; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .main-header .main-logo {
         left: 60px; } }
     @media screen and (max-width: 1024px) {
@@ -753,7 +753,7 @@ img {
     .main-header .main-logo img {
       width: 173px;
       height: 88px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .main-header .main-logo img {
           width: 165px;
           height: 85px; } }
@@ -938,7 +938,7 @@ img {
     margin-top: 80px;
     line-height: 26px;
     color: #fff; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .top-section__subtitle {
         margin-top: 40px; } }
     @media screen and (max-width: 767px) {
@@ -1019,7 +1019,7 @@ img {
   .about .section-content-title {
     margin-top: 27px;
     margin-bottom: 78px; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .about .section-content-title {
         margin-top: 31px;
         margin-bottom: 73px; } }
@@ -1053,7 +1053,7 @@ img {
 .client-item {
   position: relative;
   margin-bottom: 240px; }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1600px) {
     .client-item {
       margin-bottom: 150px; } }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1109,7 +1109,7 @@ img {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.5px; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .client-item__number {
         font-size: 12px;
         line-height: 15px; } }
@@ -1132,7 +1132,7 @@ img {
     position: absolute;
     z-index: 1;
     width: 290px; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .client-item__letter {
         width: 230px; } }
     @media screen and (max-width: 767px) {
@@ -1144,7 +1144,7 @@ img {
     position: relative;
     margin-bottom: 65px;
     z-index: 2; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .client-item__title {
         margin-bottom: 45px; } }
     @media screen and (max-width: 767px) {
@@ -1173,7 +1173,7 @@ img {
   .team .section-content-title {
     margin-bottom: 60px;
     color: #fff; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .team .section-content-title {
         margin-bottom: 40px; } }
   .team .section-more {
@@ -1205,7 +1205,7 @@ img {
           left: 0; } }
     .team-item:nth-child(1) .team-item__letter {
       width: 320px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .team-item:nth-child(1) .team-item__letter {
           width: 256px; } }
       @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1231,7 +1231,7 @@ img {
           left: 0; } }
     .team-item:nth-child(2) .team-item__letter {
       width: 278px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .team-item:nth-child(2) .team-item__letter {
           width: 222px; } }
       @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1273,7 +1273,7 @@ img {
       line-height: 22px;
       margin-bottom: 5px;
       font-family: "Formular", sans-serif; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .team-item__title {
           font-size: 12px;
           line-height: 15px;
@@ -1285,7 +1285,7 @@ img {
           letter-spacing: 0.6px; } }
     .team-item__letter {
       padding-top: 100px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .team-item__letter {
           padding-top: 90px; } }
       @media screen and (max-width: 767px) {
@@ -1320,7 +1320,7 @@ img {
     line-height: 136px;
     font-weight: 300;
     color: #20222B; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .values .section-content-title {
         margin-bottom: 30px;
         font-size: 134px;
@@ -1336,7 +1336,7 @@ img {
   .values-item {
     position: relative;
     padding: 200px 0; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .values-item {
         padding: 150px 0; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1356,7 +1356,7 @@ img {
           right: calc(((100%/4) * 1) + 5px); } }
       .values-item:nth-child(1) .values-item__img > img {
         max-height: 590px; }
-        @media screen and (max-width: 1240px) {
+        @media screen and (max-width: 1600px) {
           .values-item:nth-child(1) .values-item__img > img {
             max-height: 445px; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1394,7 +1394,7 @@ img {
           order: 2; } }
       .values-item:nth-child(2) .values-item__img > img {
         max-height: 663px; }
-        @media screen and (max-width: 1240px) {
+        @media screen and (max-width: 1600px) {
           .values-item:nth-child(2) .values-item__img > img {
             max-height: 445px; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1422,7 +1422,7 @@ img {
           right: calc(((100%/4) * 1) + 5px); } }
       .values-item:nth-child(3) .values-item__img > img {
         max-height: 740px; }
-        @media screen and (max-width: 1240px) {
+        @media screen and (max-width: 1600px) {
           .values-item:nth-child(3) .values-item__img > img {
             max-height: 443px; } }
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1473,7 +1473,7 @@ img {
     .values-item__content {
       position: absolute;
       top: 200px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .values-item__content {
           top: 150px; } }
       @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1491,7 +1491,7 @@ img {
           margin-top: 23px; } }
     .values-item__title {
       margin-bottom: 50px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .values-item__title {
           margin-bottom: 40px; } }
       @media screen and (max-width: 767px) {
@@ -1524,7 +1524,7 @@ img {
     line-height: 62px;
     font-family: "TT Bells", sans-serif;
     color: #20222B; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .contacts-address {
         margin-bottom: 70px;
         font-size: 44px;
@@ -1548,7 +1548,7 @@ img {
       width: 275px;
       height: 370px;
       padding-top: 20px; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .contacts-address__img {
           width: 220px;
           height: 300px; } }
@@ -1559,7 +1559,7 @@ img {
         max-height: 100%; }
   .contacts-item {
     margin-bottom: 40px; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .contacts-item {
         margin-bottom: 30px; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1574,7 +1574,7 @@ img {
       line-height: 20px;
       margin-bottom: 1px;
       font-family: "Formular", sans-serif; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .contacts-item__title {
           font-size: 12px;
           line-height: 16px;
@@ -1590,7 +1590,7 @@ img {
       font-size: 48px;
       line-height: 62px;
       color: #20222B; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .contacts-item__text {
           font-size: 44px;
           line-height: 57px; } }
@@ -1603,7 +1603,7 @@ img {
     line-height: 20px;
     margin-top: auto;
     margin-bottom: 0; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .contacts__copy {
         font-size: 12px;
         line-height: 15px; } }
@@ -1623,7 +1623,7 @@ img {
     bottom: 75px;
     transform: rotate(-90deg);
     transform-origin: bottom left; }
-    @media screen and (max-width: 1240px) {
+    @media screen and (max-width: 1600px) {
       .contacts-madeby {
         right: -100px; } }
     @media screen and (max-width: 1024px) {
@@ -1637,7 +1637,7 @@ img {
       font-size: 16px;
       line-height: 20px;
       color: #20222B; }
-      @media screen and (max-width: 1240px) {
+      @media screen and (max-width: 1600px) {
         .contacts-madeby__text {
           font-size: 12px;
           line-height: 15px; } }

@@ -1,18 +1,4 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^index\.html$ - [L]
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule . /index.html [L]
-
-    <FilesMatch "(?i)\.(php|php3?|phtml)$">
-        Order Deny,Allow
-        Deny from All
-    </FilesMatch>
-
-    <FilesMatch "contact.php">
-        Order Deny,Allow
-        Allow from All
-    </FilesMatch>
-</IfModule>
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
